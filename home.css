@@ -1,0 +1,974 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: normal;
+}
+.main-container {
+    overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 776px;
+    overflow: hidden;
+}
+
+.rectangle-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.logo-capa {
+    border-radius: 6px;
+    background-color: #000;
+    width: 699px;
+    height: 263px;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    top: 2px;
+    left: 1px;
+}
+
+
+.vetor-capa {
+    width: 100%;
+    max-width: 490px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.flex-row-e {
+    position: relative;
+    width: 1342px;
+    height: 510px;
+    margin: 41px 0 0 43px;
+    z-index: 54;
+}
+
+.o-festival {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 6.47%;
+    top: 0;
+    left: 5.37%;
+    color: #000;
+    font-family: "Gill Sans MT";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.9px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: -0.35px;
+    text-decoration: none;
+    z-index: 38;
+}
+
+.vector-1 {
+    position: absolute;
+    width: 22.13%;
+    height: 99.41%;
+    top: 0.59%;
+    left: 51.64%;
+    background: url(public/images/vector-meses.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 7;
+}
+
+.flex-row-e-2 {
+    position: relative;
+    width: 297px;
+    height: 276px;
+    margin: 55px 0 0 0;
+    z-index: 58;
+}
+
+.regroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 21.21%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 58;
+}
+
+.rectangle {
+    flex-shrink: 0;
+    position: relative;
+    width: 27px;
+    height: 276px;
+    z-index: 57;
+}
+
+.rectangle-3 {
+    flex-shrink: 0;
+    position: relative;
+    width: 27px;
+    height: 276px;
+    z-index: 58;
+}
+
+.julho {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 31.65%;
+    height: 13.04%;
+    top: 9.78%;
+    left: 66.01%;
+    color: #000;
+    text-align: center;
+    font-family: "Gill Sans Ultra Bold";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.264px;
+    z-index: 40;
+}
+
+.setembro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 52.19%;
+    height: 13.04%;
+    top: 27.54%;
+    left: 46.8%;
+    color: #000;
+    text-align: center;
+    font-family: "Gill Sans Ultra Bold";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.264px;
+    z-index: 41;
+}
+
+.novembro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 55.56%;
+    height: 13.04%;
+    top: 44.93%;
+    left: 43.77%;
+    color: #000;
+    text-align: center;
+    font-family: "Gill Sans Ultra Bold";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.264px;
+    z-index: 42;
+}
+
+.dezembro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 54.55%;
+    height: 13.04%;
+    top: 62.68%;
+    left: 44.45%;
+    color: #000000;
+    color: #000;
+    text-align: center;
+    font-family: "Gill Sans Nova Ultra Bold";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.264px;
+    z-index: 43;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 160px;
+    height: 20px;
+    margin: 64px 0 0 69px;
+    z-index: 45;
+}
+
+.belem {
+    flex-shrink: 0;
+    position: relative;
+    height: 20px;
+    color: #000;
+    font-family: "Gill Sans Nova";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94%;
+    letter-spacing: -0.21px;
+    text-decoration: none;
+    z-index: 44;
+}
+
+.soure {
+    flex-shrink: 0;
+    position: relative;
+    height: 20px;
+    color: #000;
+    font-family: "Gill Sans Nova";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94%;
+    letter-spacing: -0.21px;
+    text-decoration: none;
+    z-index: 45;
+}
+
+.shape-with-text-4 {
+    position: absolute;
+    width: 23.85%;
+    height: 62.75%;
+    top: 0.78%;
+    left: 76.01%;
+    font-size: 0px;
+    background: #000000;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.text-8 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 227px;
+    height: 139px;
+    margin: 47px 0 0 47px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Gill Sans Nova";
+    font-size: 115px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: -1.265px;
+    z-index: 5;
+
+}
+
+.shape-with-text-5 {
+    position: relative;
+    width: 211px;
+    height: 16px;
+    margin: 17px 0 0 53px;
+    background: #ffffff;
+    z-index: 6;
+}
+
+.rectangle-6 {
+    position: absolute;
+    width: 3.35%;
+    height: 4.12%;
+    top: 1.76%;
+    left: 0;
+    background: #000000;
+    z-index: 50;
+}
+
+.centro-cultural-sambaiba {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 6.47%;
+    top: 10.59%;
+    left: 5.07%;
+    color: #000;
+    font-family: "Gill Sans MT";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 94%;
+    letter-spacing: 1.05px;
+    text-decoration: none;
+    z-index: 39;
+}
+
+.rectangle-7 {
+    position: absolute;
+    width: 3.35%;
+    height: 4.12%;
+    top: 12.94%;
+    left: 0;
+    background: #000000;
+    z-index: 51;
+}
+
+.button {
+    position: absolute;
+    width: 23.47%;
+    height: 14.9%;
+    top: 23.73%;
+    left: 0.22%;
+    cursor: pointer;
+    background: #000000;
+    border: none;
+    z-index: 52;
+}
+
+.programacao {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 36.84%;
+    top: 31.58%;
+    left: 12.38%;
+    color: #FFF;
+    font-family: "Gill Sans MT";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 94%;
+    letter-spacing: -2.1px;
+    text-decoration: none;
+    z-index: 53;
+}
+
+.vector-programacao {
+    display: flex;
+    margin-left: 11.1rem;
+    margin-top: 4.7rem;
+}
+
+.component {
+    position: absolute;
+    width: 459px;
+    height: 270px;
+    top: 196px;
+    left: 180px;
+    background: url(./assets/images/3d2975d6-2030-4b52-a251-80a98d17d4cf.png) no-repeat center;
+    background-size: cover;
+    z-index: 54;
+}
+
+.crato {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 3.92%;
+    top: 78.04%;
+    left: 70.57%;
+    color: #000;
+    font-family: "Gill Sans Nova";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94%;
+    letter-spacing: -0.21px;
+    text-decoration: none;
+    z-index: 47;
+}
+
+.fortaleza {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 3.92%;
+    top: 78.04%;
+    left: 77.72%;
+    color: #000;
+    font-family: "Gill Sans Nova";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94%;
+    letter-spacing: -0.21px;
+    text-decoration: none;
+    z-index: 46;
+}
+
+.jericoacoara {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 3.92%;
+    top: 78.04%;
+    left: 88.3%;
+    color: #000;
+    font-family: "Gill Sans Nova";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94%;
+    letter-spacing: -0.21px;
+    text-decoration: none;
+    z-index: 48;
+}
+
+.flex-row-b {
+    position: relative;
+    width: 1303px;
+    height: 1188px;
+    margin: 118px 0 0 137px;
+    z-index: 55;
+}
+
+.o-festival-8 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 35.99%;
+    height: 10.1%;
+    top: -4rem;
+    left: 0;
+    color: #000;
+    text-align: center;
+    font-family: "Gill Sans Ultra Bold";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.88px;
+    z-index: 3;
+}
+
+.shape-with-text-9 {
+    position: absolute;
+    width: 55.79%;
+    height: 99.92%;
+    top: 0.08%;
+    left: 44.10%;
+    font-size: 0px;
+    background: #000000;
+    z-index: 8;
+    border-radius: 6px;
+}
+
+.centro-cultural-sambaiba-a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 419px;
+    height: 249px;
+    margin: 78px 0 0 99px;
+    color: #FFF;
+    font-family: "Gill Sans Ultra Bold";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    /* 82.6px */
+    letter-spacing: -0.77px;
+    z-index: 31;
+    overflow: hidden;
+}
+
+.shape-with-text-b {
+    position: relative;
+    width: 434px;
+    height: 76px;
+    margin: 57px 0 0 99px;
+    background: #ffffff;
+    z-index: 10;
+    border-radius: 6px;
+}
+
+.firmando-nosso-compromisso {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 505px;
+    margin: 56px 0 0 99px;
+    color: #FFF;
+    font-family: "Gill Sans Nova";
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 134%;
+    /* 44.22px */
+    letter-spacing: 1.32px;
+    z-index: 32;
+}
+
+.vector-c {
+    position: absolute;
+    width: 6.74%;
+    height: 4.13%;
+    top: 88.46%;
+    left: 14.31%;
+    background: url(public/images/conhecabranco.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 25;
+}
+
+.conheca {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 2.53%;
+    top: 89.3%;
+    left: 23.52%;
+    color: #FFF;
+    font-family: "Gill Sans MT";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94%;
+    letter-spacing: 1.28px;
+    text-decoration: none;
+    z-index: 9;
+}
+
+.rectangle-d {
+    position: absolute;
+    width: 36.45%;
+    height: 5.98%;
+    top: 11.03%;
+    left: 0.31%;
+    background: #000000;
+    z-index: 55;
+}
+
+.iniciado-em {
+    position: absolute;
+    width: 36.07%;
+    height: 36.2%;
+    top: 21.04%;
+    left: 0.54%;
+    font-family: Gill Sans MT, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41.7px;
+    text-align: left;
+    letter-spacing: 1.2px;
+    z-index: 33;
+}
+
+.text-12 {
+    position: relative;
+    color: #000;
+    font-family: "Gill Sans Nova";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139%;
+    letter-spacing: 1.2px;
+}
+
+.importancia-descentralizacao-cultural {
+    position: relative;
+    color: #000;
+    font-family: "Gill Sans Nova";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 139%;
+    letter-spacing: 1.2px;
+}
+
+.vector-e {
+    position: absolute;
+    width: 3.76%;
+    height: 4.12%;
+    top: 65%;
+    left: 0.77%;
+    background: url(public/images/conheca.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 24;
+}
+
+.conheca-f {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 2.53%;
+    top: 60.69%;
+    left: 5.99%;
+    color: #000;
+    font-family: "Gill Sans MT";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94%;
+    letter-spacing: 1.28px;
+    text-decoration: none;
+    z-index: 30;
+}
+
+.flex-row-10 {
+    position: relative;
+    width: 1327px;
+    height: 649px;
+    margin: 0 0 0 -1px;
+    z-index: 36;
+}
+
+.rectangle-11 {
+    position: absolute;
+    width: 715px;
+    height: 642px;
+    top: 0;
+    left: 0;
+    background: url(public/images/fotopremio.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 11;
+}
+
+.regroup-12 {
+    position: absolute;
+    width: 5.73%;
+    height: 100%;
+    top: 0;
+    left: 93.59%;
+    z-index: 15;
+}
+
+.vector-13 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 69.65%;
+    left: 29%;
+    background: url(public/images/capucho.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 14;
+}
+
+.vector-14 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 69.65%;
+    left: 79.63%;
+    background: url(public/images/capucho.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 15;
+}
+
+.vector-15 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 14.64%;
+    left: 59.16%;
+    background: url(public/images/capucho.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 12;
+}
+
+.vector-16 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 14.64%;
+    left: 62.09%;
+    background: url(public/images/capucho.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 13;
+}
+
+.sonho-transformar-vida {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 452px;
+    height: 297px;
+    top: 17.88%;
+    left: 64.69%;
+    color: #000;
+    font-family: "Gill Sans Nova", sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 146%;
+    text-align: left;
+    letter-spacing: 2.07px;
+    z-index: 34;
+}
+
+
+.capucho {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 140px;
+    height: 12.48%;
+    top: 82.43%;
+    left: 66.69%;
+    color: #000000;
+    font-family: Gill Sans Nova, var(--default-font-family);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 33.58px;
+    text-align: left;
+    letter-spacing: 2.07px;
+    z-index: 35;
+}
+
+.idealizador-festival {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 5.86%;
+    top: 86.13%;
+    left: 66.69%;
+    color: #000000;
+    font-family: Gill Sans Nova, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32.12px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1.98px;
+    z-index: 36;
+}
+
+.shape-with-text-17 {
+    position: relative;
+    width: 1440px;
+    height: 673px;
+    margin: -6px 0 0 0;
+    background: #000000;
+    z-index: 16;
+    overflow: visible auto;
+}
+
+.flex-row-b-18 {
+    position: relative;
+    width: 1234px;
+    height: 113px;
+    margin: 69px 0 0 89px;
+    z-index: 29;
+}
+
+.newsletter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 17.18%;
+    height: 53.1%;
+    top: 0;
+    left: 21.72%;
+    color: #ffffff;
+    font-family: Gill Sans Nova, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: -0.44px;
+    z-index: 17;
+}
+
+.logo-footer {
+    position: absolute;
+    width: 16.86%;
+    height: 88.5%;
+    top: 5.31%;
+    left: 0;
+    background: url(./assets/images/9149ab38-f954-48e1-bbad-b280c70589c2.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 21;
+}
+
+.vector-19 {
+    position: absolute;
+    width: 0.05%;
+    height: 60.18%;
+    top: 13.27%;
+    left: 58.08%;
+    background: url(./assets/images/157aff07-2266-4b60-832f-bfacf53a7047.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 27;
+}
+
+.rectangle-1a {
+    position: absolute;
+    width: 2.27%;
+    height: 11.5%;
+    top: 30.97%;
+    left: 40.44%;
+    background: #ffffff;
+    z-index: 29;
+}
+
+.seu-e-mail {
+    position: absolute;
+    width: 9.56%;
+    height: 33.63%;
+    top: 31.86%;
+    left: 60.53%;
+    color: #ffffff;
+    font-family: Gill Sans Nova, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32.12px;
+    text-align: left;
+    letter-spacing: 1.98px;
+    z-index: 22;
+    overflow: hidden;
+}
+
+.rectangle-1b {
+    position: absolute;
+    width: 9.4%;
+    height: 42.48%;
+    top: 31.86%;
+    left: 90.6%;
+    background: #ffffff;
+    z-index: 23;
+}
+
+.enviar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 79.17%;
+    top: 6.25%;
+    left: 15.52%;
+    color: #000000;
+    font-family: Gill Sans Nova, var(--default-font-family);
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 36.5px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 2.25px;
+    z-index: 37;
+}
+
+.inscreva-se-para-receber {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 218px;
+    height: 51.33%;
+    top: 48.67%;
+    left: 21.39%;
+    color: #ffffff;
+    font-family: Gill Sans Nova, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29.26px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    z-index: 18;
+}
+
+.vector-1c {
+    position: absolute;
+    width: 32.9%;
+    height: 0.57%;
+    top: 73.17%;
+    left: 58.1%;
+    background: url(./assets/images/aadc6ed0-03f2-4a53-aa42-75c817adeb39.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 26;
+}
+
+.vector-1d {
+    position: relative;
+    width: 527px;
+    height: 26px;
+    margin: 93px 0 0 110px;
+    background: url(./assets/images/b16ae594-6b43-4799-9130-2b15bd01f60f.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 28;
+}
+
+.patrocinios {
+    display: block;
+    position: relative;
+    height: 33px;
+    margin: 37px 0 0 108px;
+    color: #ffffff;
+    font-family: Gill Sans Nova, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 27.74px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1.71px;
+    z-index: 20;
+}
+
+.etc {
+    display: block;
+    position: relative;
+    height: 33px;
+    margin: 167px 0 0 109px;
+    color: #ffffff;
+    font-family: Gill Sans Nova, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 27.74px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1.71px;
+    z-index: 19;
+}
+
+.rectangle-1e {
+    position: absolute;
+    width: 100%;
+    height: 19.63%;
+    top: 0;
+    left: -0.07%;
+    background: url(./assets/images/c6bc4542-5d9b-40cc-867b-40355b4c6e1e.png) no-repeat center;
+    background-size: 100% 100%;
+}
