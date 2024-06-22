@@ -1,12 +1,36 @@
+/* Reset de margens, paddings e box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Importação das fontes personalizadas */
+
+/* Gill Sans Nova Cond Ultra Bold */
+@font-face {
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gill Sans Nova Cond Ultra Bold'), url('GillSansCondUltraBoNova.woff') format('woff');
+}
+
+/* Gill Sans Nova Ultra Bold */
+@font-face {
+    font-family: 'Gill Sans Nova Ultra Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gill Sans Nova Ultra Bold'), url('GillSansUltraBoNova.woff') format('woff');
+}
+
+/* Aplicação das fontes e estilos globais */
+
 body {
+    font-family: 'Gill Sans Nova Cond Ultra Bold', 'Gill Sans Nova Ultra Bold', sans-serif;
+    /* Fallback para sans-serif caso as fontes personalizadas não carreguem */
     line-height: normal;
 }
+
 .main-container {
     overflow: hidden;
 }
