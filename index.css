@@ -108,8 +108,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 5rem auto;
-    padding-left: 15rem;
+    margin-top: 5rem;
 
 }
 
