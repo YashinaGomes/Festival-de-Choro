@@ -104,12 +104,23 @@ button {
 
 /*navegação nova*/
 
+#navegacao{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 5rem;
+    width: 100%;
 
+}
+
+.nav-link{
+    margin-left: 15rem;
 }
 
 
