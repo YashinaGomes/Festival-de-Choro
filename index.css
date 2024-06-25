@@ -23,11 +23,12 @@
     src: local('Gill Sans Nova Ultra Bold'), url('GillSansUltraBoNova.woff') format('woff');
 }
 
-/* Aplicação das fontes e estilos globais */
-
+/* Para navegadores baseados em Webkit, os pseudo-elementos devem ser definidos */
 body {
-    font-family: 'Gill Sans Nova Cond Ultra Bold', 'Gill Sans Nova Ultra Bold', sans-serif;
-    /* Fallback para sans-serif caso as fontes personalizadas não carreguem */
+    scrollbar-width: thin;
+    /* Define a largura da barra de rolagem no Firefox */
+    scrollbar-color: #000 #ccc;
+    /* Define as cores da "pegada" e da trilha no Firefox */
     line-height: normal;
 }
 
@@ -45,6 +46,22 @@ select,
 textarea,
 button {
     outline: 0;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
 .image-container {
@@ -76,14 +93,14 @@ button {
     position: absolute;
     bottom: 0;
     z-index: 0;
-    top: 2px;
+    top: 3px;
     left: 1px;
 }
 
 
 .vetor-capa {
     width: 100%;
-    max-width: 490px;
+    max-width: 500px;
     height: auto;
     position: absolute;
     top: 0;
@@ -91,20 +108,10 @@ button {
     z-index: 1;
 }
 
-/* 
-.flex-row-e {
-    position: relative;
-    width: 1342px;
-    height: 510px;
-    margin: 41px 0 0 43px;
-    z-index: 54;
-} */
-
-
 
 /*navegação nova*/
 
-#navegacao{
+#navegacao {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -115,11 +122,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-top: 5rem;
+    margin-left: -33rem;
     width: 100%;
 
 }
 
-.nav-link{
+.nav-link {
     margin-left: 15rem;
 }
 
@@ -132,12 +140,12 @@ nav {
 
 .festival-nav-link li {
     list-style: none;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .triangulo {
     padding-left: 15em;
-    margin-top: -1.4em;
+    margin-top: -1.1em;
 }
 
 .year {
@@ -154,7 +162,7 @@ nav {
 }
 
 .yearImg {
-    padding-left: 10rem;
+    padding-left: 6rem;
 
 }
 
@@ -175,7 +183,7 @@ nav {
 .meses-list li {
     list-style: none;
     padding-top: 1rem;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .meses-list li:first-child {
@@ -221,48 +229,52 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     margin: 15em auto;
-   
+
 
 }
 
-.collum, .collum2{
+.collum,
+.collum2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #FFF;
     height: 1187px;
-   
+
 }
 
-.fest{
+.fest {
+    width: 475px;
+    margin-top: 3rem;
+}
+
+.retangulo {
+    padding-top: 34px;
     width: 475px;
 }
 
-.retangulo{
-    padding-top: 11px;
-    width: 475px;
-}
-
-.collum p{
+.collum p {
     width: 470px;
     color: #000;
-font-family: "Gill Sans Nova";
-font-size: 30px;
-font-style: normal;
-font-weight: 400;
-line-height: 139%; /* 41.7px */
-letter-spacing: 1.2px;
-padding-top: 2rem;
+    font-family: "Gill Sans Nova";
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139%;
+    /* 41.7px */
+    letter-spacing: 1.2px;
+    padding-top: 2rem;
+    
 }
 
-.collum p span{
+.collum p span {
     color: #000;
-font-family: "Gill Sans Nova";
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: 139%;
-letter-spacing: 1.2px;
+    font-family: "Gill Sans Nova";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 139%;
+    letter-spacing: 1.2px;
 }
 
 .vetor {
@@ -272,50 +284,56 @@ letter-spacing: 1.2px;
     height: 49px;
     margin-left: -18em;
     margin-top: 2rem;
-  }
-  
-  /* Estilos do link */
-  .vetor a {
-    display: flex; /* Torna o link um container flexível */
-    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+/* Estilos do link */
+.vetor a {
+    display: flex;
+    /* Torna o link um container flexível */
+    align-items: center;
+    /* Alinha os itens verticalmente no centro */
     color: #000;
     font-family: "Gill Sans MT";
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: 94%; /* 30.08px */
+    line-height: 94%;
+    /* 30.08px */
     letter-spacing: 1.28px;
     text-decoration: none;
     text-align: center;
-  }
-  
-  /* Espaçamento entre a imagem e o texto */
-  .vetor a img {
-    margin-right: 10px; /* Ajuste conforme necessário */
-  }
-  
-  /* Estilos adicionais para o texto dentro do link */
-  .vetor a span {
+}
+
+/* Espaçamento entre a imagem e o texto */
+.vetor a img {
+    margin-right: 10px;
+    /* Ajuste conforme necessário */
+}
+
+/* Estilos adicionais para o texto dentro do link */
+.vetor a span {
     display: inline-block;
-  }
- 
-  .collum2{
+}
+
+.collum2 {
     background-color: #000000;
-  }
+    border-radius: 6px;
+}
 
-  .centro{
-    padding-top: 5rem;
-    margin-left: -15rem;
-  }
+.centro {
+    padding-top: 4rem;
+    margin-left: -2rem;
 
-  .collum2 h1{
+}
+
+.collum2 h1 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-   color: #FFF;
-   width: 319px;
-   
-   font-family: "Gill Sans MT";
+    color: #FFF;
+    width: 319px;
+
+    font-family: "Gill Sans MT";
     font-size: 45px;
     font-style: normal;
     font-weight: 700;
@@ -323,100 +341,87 @@ letter-spacing: 1.2px;
     letter-spacing: 1.05px;
     text-decoration: none;
     z-index: 39;
-  }
+}
 
-  .collum2 img{
-   padding-top: 2rem;
-  }
+.collum2 img {
+    padding-top: 2rem;
+}
 
-  .collum2 p{
+.collum2 p {
     width: 505px;
     color: #FFF;
-font-family: "Gill Sans Nova";
-font-size: 33px;
-font-style: normal;
-font-weight: 400;
-line-height: 134%; /* 44.22px */
-letter-spacing: 1.32px;
-padding-top: 5rem;
-  }
+    font-family: "Gill Sans Nova";
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134%;
+    /* 44.22px */
+    letter-spacing: 1.32px;
+    padding-top: 5rem;
+}
 
- #text{
+#text {
     padding-top: 2rem;
     color: #FFF;
-  }
+}
 
 
-  .festival2{
+.festival2 {
     margin-top: -15rem;
-  }
+}
 
+.collumFoto {
+    width: 716px;
+    height: 643px;
+}
 
-  .collumFoto{
-    width: 110%;
-   
-    background-image: url('assets/foto.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    
-    
-  }
-
-  .setas{
+.setas {
     display: flex;
     justify-content: flex-start;
-    margin-top: 95px;
-  margin-left: -45rem;
-  }
+    margin-top: 10rem;
+    margin-left: -38rem;
+    margin-bottom: -3rem;
+}
 
-  #capucho{
+#capuchoText {
     color: #000;
-font-family: "Gill Sans Nova";
-font-size: 23px;
-font-style: normal;
-font-weight: 300;
-line-height: 146%; /* 33.58px */
-letter-spacing: 2.07px;
-  }
+    font-family: "Gill Sans Nova";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 300;
 
-#seta2{
+}
+
+
+
+#seta2 {
     margin-left: 0;
-    margin-right: -45rem;
+    margin-right: -30rem;
     margin-top: 0.5rem;
 }
 
-.name{
+.name {
     color: #000;
-font-family: "Gill Sans Nova";
-font-size: 23px;
-font-style: normal;
-font-weight: 700;
-line-height: 146%; /* 33.58px */
-letter-spacing: 2.07px;
+    font-family: "Gill Sans Nova";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 146%;
+    /* 33.58px */
+    letter-spacing: 2.07px;
+    margin-top: 5rem;
 }
 
-.name span{
+.name span {
     color: #000;
-font-family: "Gill Sans Nova";
-font-size: 22px;
-font-style: normal;
-font-weight: 300;
-line-height: 146%; /* 32.12px */
-letter-spacing: 1.98px;
+    font-family: "Gill Sans Nova";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 146%;
+    /* 32.12px */
+    letter-spacing: 1.98px;
 }
-
-
-
-
-
-
-
-
-
-/**/
-
-
 
 .o-festival {
     display: flex;
@@ -450,26 +455,6 @@ letter-spacing: 1.98px;
     z-index: 7;
 }
 
-/* .flex-row-e-2 {
-    position: relative;
-    width: 297px;
-    height: 276px;
-    margin: 55px 0 0 0;
-    z-index: 58;
-} */
-
-/* .regroup {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    width: 21.21%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 58;
-} */
-
 .rectangle {
     flex-shrink: 0;
     position: relative;
@@ -486,98 +471,6 @@ letter-spacing: 1.98px;
     z-index: 58;
 }
 
-/* 
-.julho {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    width: 31.65%;
-    height: 13.04%;
-    top: 9.78%;
-    left: 66.01%;
-    color: #000;
-    text-align: center;
-    font-family: "Gill Sans Ultra Bold";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: -0.264px;
-    z-index: 40;
-}
-
-.setembro {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    width: 52.19%;
-    height: 13.04%;
-    top: 27.54%;
-    left: 46.8%;
-    color: #000;
-    text-align: center;
-    font-family: "Gill Sans Ultra Bold";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: -0.264px;
-    z-index: 41;
-}
-
-.novembro {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    width: 55.56%;
-    height: 13.04%;
-    top: 44.93%;
-    left: 43.77%;
-    color: #000;
-    text-align: center;
-    font-family: "Gill Sans Ultra Bold";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: -0.264px;
-    z-index: 42;
-}
-
-.dezembro {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    width: 54.55%;
-    height: 13.04%;
-    top: 62.68%;
-    left: 44.45%;
-    color: #000000;
-    color: #000;
-    text-align: center;
-    font-family: "Gill Sans Nova Ultra Bold";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: -0.264px;
-    z-index: 43;
-}
-
-.flex-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 160px;
-    height: 20px;
-    margin: 64px 0 0 69px;
-    z-index: 45;
-} */
 
 .belem {
     flex-shrink: 0;
@@ -649,45 +542,6 @@ letter-spacing: 1.98px;
     z-index: 6;
 }
 
-/* .rectangle-6 {
-    position: absolute;
-    width: 3.35%;
-    height: 4.12%;
-    top: 1.76%;
-    left: 0;
-    background: #000000;
-    z-index: 50;
-} */
-
-/* .centro-cultural-sambaiba {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 6.47%;
-    top: 10.59%;
-    left: 5.07%;
-    color: #000;
-    font-family: "Gill Sans MT";
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 94%;
-    letter-spacing: 1.05px;
-    text-decoration: none;
-    z-index: 39;
-} */
-
-/* 
-.rectangle-7 {
-    position: absolute;
-    width: 3.35%;
-    height: 4.12%;
-    top: 12.94%;
-    left: 0;
-    background: #000000;
-    z-index: 51;
-} */
 
 .button {
     position: absolute;
@@ -1081,58 +935,17 @@ letter-spacing: 1.98px;
     z-index: 34;
 }
 
-/* 
-.capucho {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    width: 140px;
-    height: 12.48%;
-    top: 82.43%;
-    left: 66.69%;
-    color: #000000;
-    font-family: Gill Sans Nova, var(--default-font-family);
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 33.58px;
-    text-align: left;
-    letter-spacing: 2.07px;
-    z-index: 35;
-} */
-/* 
-.idealizador-festival {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    height: 5.86%;
-    top: 86.13%;
-    left: 66.69%;
-    color: #000000;
-    font-family: Gill Sans Nova, var(--default-font-family);
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 32.12px;
-    text-align: left;
-    white-space: nowrap;
-    letter-spacing: 1.98px;
-    z-index: 36;
-} */
 
 .shape-with-text-17 {
     position: relative;
     width: 100%;
-    height: 673px;
-    margin: -15rem 0 0 0;
+    height: 432px;
+    margin: -44.1rem 0 0 0;
     background: #000000;
     z-index: 16;
     overflow: visible auto;
 }
 
-.logoFooter{
-  
-}
 
 .flex-row-b-18 {
     position: relative;
@@ -1184,21 +997,21 @@ letter-spacing: 1.98px;
     z-index: 27;
 }
 
-.inputform{
+.inputform {
     display: flex;
-    
+
 }
 
 .rectangle-1a {
     position: absolute;
     width: 456px;
-height: 68px;
+    height: 68px;
     top: 30.97%;
     left: 53.9%;
-    background:transparent;
-    border-left: 2px solid  #FFF; 
-    border-bottom: 2px solid  #FFF; 
-    border-top:none;
+    background: transparent;
+    border-left: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    border-top: none;
     border-right: none;
     z-index: 29;
     padding-left: 0.5rem;
@@ -1261,25 +1074,24 @@ height: 68px;
     height: 51.33%;
     top: 48.67%;
     left: 21.39%;
-    color: #ffffff;
-    font-family: Gill Sans Nova, var(--default-font-family);
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 29.26px;
-    text-align: center;
-    letter-spacing: -0.24px;
     z-index: 18;
+    color: #FFF;
+    text-align: center;
+    font-family: "Gill Sans Nova";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 133%;
+    letter-spacing: -0.242px;
 }
 
 .vector-1c {
     position: absolute;
-    width: 32.9%;
-    height: 0.57%;
-    top: 73.17%;
-    left: 58.1%;
-    background: url(./assets/images/aadc6ed0-03f2-4a53-aa42-75c817adeb39.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 26;
+    width: 28px;
+    height: 13px;
+    background: url(public/images/vetorNew.png) no-repeat center;
+    padding-left: 64rem;
+    margin-top: -4.5rem;
 }
 
 .vector-1d {
@@ -1287,25 +1099,20 @@ height: 68px;
     width: 527px;
     height: 26px;
     margin: 93px 0 0 110px;
-    background: url(./assets/images/b16ae594-6b43-4799-9130-2b15bd01f60f.png) no-repeat center;
+    background: url(public/images/vectorpatrocinadores.png) no-repeat center;
     background-size: 100% 100%;
     z-index: 28;
 }
 
 .patrocinios {
-    display: block;
-    position: relative;
-    height: 33px;
-    margin: 37px 0 0 108px;
-    color: #ffffff;
-    font-family: Gill Sans Nova, var(--default-font-family);
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 27.74px;
-    text-align: left;
-    white-space: nowrap;
-    letter-spacing: 1.71px;
-    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 12em;
+    margin-top: 1rem;
+    width: 1131px;
+    height: 396px;
+    flex-shrink: 0;
 }
 
 .etc {
@@ -1332,4 +1139,20 @@ height: 68px;
     left: -0.07%;
     background: url(./assets/images/c6bc4542-5d9b-40cc-867b-40355b4c6e1e.png) no-repeat center;
     background-size: 100% 100%;
+}
+
+.reservados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #000;
+    width: 100%;
+    height: 87px;
+    text-align: left;
+    font-family: 'GillSansNova-BookItalic', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 13px;
+    line-height: normal;
 }
