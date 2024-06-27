@@ -19,26 +19,41 @@
             <img class="rectangle-icon" src="public/images/capa.png" alt="Imagem do festival">
             <img class="logo-capa" src="assets/logo-capa.png" alt="Logo choro e jazz">
             <img class="vetor-capa" src="public/images/vectorcapa.png" alt="vetor com datas dos festivais">
+            <div class="music-player">
+                <!-- <audio id="audio" src="DÉO RIAN E REGIONAL IMPERIAL - 8ª EDIÇÃO FESTIVAL CHORO JAZZ.mp3"></audio> -->
+                <button id="play" class="control-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5V19L19 12L8 5Z" fill="white" />
+                    </svg>
+                </button>
+                <button id="pause" class="control-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 19H10V5H6V19ZM14 5V19H18V5H14Z" fill="white" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
 
     <section id="navegacao">
+
         <nav>
             <div class="nav-link">
+
                 <ul class="festival-nav-link">
                     <li>
                         <a href="#">
-                            <img src="assets/festival.png" alt="Imagem com o texto O festival">
+                            <img class="imagem-festival" src="assets/festival.png" alt="Imagem com o texto O festival">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/centrocultural.png" alt="Imagem Centro Cultural Samambaia">
+                            <img class="imagem-sambaiba" src="assets/centrocultural.png" alt="Imagem Centro Cultural Samambaia">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/programação.png" alt="Imagem Programação">
+                            <img class="imagem-programacao" src="assets/programação.png" alt="Imagem Programação"  >
                         </a>
                     </li>
                 </ul>
@@ -49,6 +64,7 @@
                 </figure>
 
             </div>
+
 
             <div class="year">
 
@@ -73,8 +89,9 @@
                     <li><a href="soure.html">Soure</a></li>
                     <li><a href="crato.html">Crato</a></li>
                     <li><a href="fortaleza.html">Fortaleza</a></li>
-                    <li><a href="jericoacora.html">JERICOACOARA</a></li>
+                    <li><a href="jericoacora.html">Jericoacoara</a></li>
                 </ul>
+                
 
 
             </div>
@@ -115,7 +132,7 @@
                         <img class="cent" src="public/images/cent.png" alt="">
 
                     </figure>
-                    <figure><img src="assets/retanguloBranco.png" alt=""></figure>
+                    <figure><img class="cent-retangulo" src="assets/retanguloBranco.png" alt="Retangulo branco"></figure>
 
                     <p>Firmando nosso compromisso com a democratização musical e oferecendo o melhor em termos de
                         aprendizado, em 16 de janeiro de 2012 foi fundada a Escola de Música Choro Jazz, dando aulas
@@ -144,7 +161,7 @@
             <div class="collumFoto">
 
                 <figure>
-                    <img class="seta" src="public/images/capuchofoto.png" alt="">
+                    <img class="seta" src="public/images/capuchofoto.png" alt="Fodo capucho">
                 </figure>
 
             </div>
@@ -180,7 +197,7 @@
 
                 <p class="name">
                     CAPUCHO<br>
-                    <span>IDEALIZADOR DO FESTIVAL</span>
+                    <span class="role">Idealizador do Festival</span>
                 </p>
 
 
@@ -190,30 +207,39 @@
         </section>
     </main>
     <footer class="shape-with-text-17">
-
         <div class="flex-row-b-18">
-            <img class="logoFooter" src="assets/logo-footer-1.png" alt="">
-            <h2 class="newsletter">Newsletter</h2>
-            <div class="logo-footer"></div>
-            <div class="vector-19"></div>
-            <form>
-                <label for="email" class="seu-e-mail"></label>
-                <div class="inputform">
-                    <input type="email" id="email" class="rectangle-1a" placeholder="Seu e-mail" required>
-                    <button type="submit" class="rectangle-1b"><span class="enviar">enviar</span></button>
+           
+            <div>
+                <img class="logoFooter" src="assets/logo-footer-1.png" alt="">
+                <div class="newsletter-container">
+                    <h2 class="newsletter">Newsletter</h2>
+                    <p class="inscreva">Inscreva-se para receber<br />novidades em seu e-mail.</p>
                 </div>
-            </form>
-            <p class="inscreva-se-para-receber">Inscreva-se para receber<br />novidades em seu e-mail.</p>
-            <div class="vector-1c"></div>
+            </div>
+
+            <div>
+                <form>
+                    <label for="email" class="seu-e-mail" id="label-email">Seu e-mail</label>
+                    <div class="inputform">
+                        <label for="email" class="seu-e-mail" id="label-email">Seu e-mail</label>
+                        <input type="email" id="email" class="rectangle-1a" placeholder="" required>
+                        <button type="submit" class="rectangle-1b"><span class="enviar">enviar</span></button>
+                    </div>
+                </form>
+            </div>
+          
         </div>
         <div class="vector-1d"></div>
-        
     </footer>
-    <img class="patrocinios" src="public/images/regua-1.png" alt="">
+
+    <img class="patrocinios" src="public/images/regua web.png" alt="Régua de patrocinadores">
     <div class="reservados">
         <h3>© 2024 Choro and Jazz. All rights reserved.</h3>
     </div>
 
+    <script src="script.js"></script>
+
 </body>
+
 
 </html>

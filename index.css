@@ -4,43 +4,32 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Importação das fontes personalizadas */
-
-/* Gill Sans Nova Cond Ultra Bold */
-@font-face {
-    font-family: 'Gill Sans Nova Cond Ultra Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gill Sans Nova Cond Ultra Bold'), url('GillSansCondUltraBoNova.woff') format('woff');
+html, body {
+	width: 100%;
+	height: 100%;
 }
 
-/* Gill Sans Nova Ultra Bold */
-@font-face {
-    font-family: 'Gill Sans Nova Ultra Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gill Sans Nova Ultra Bold'), url('GillSansUltraBoNova.woff') format('woff');
-}
-
-/* Para navegadores baseados em Webkit, os pseudo-elementos devem ser definidos */
+/* Estilos gerais */
 body {
     scrollbar-width: thin;
-    /* Define a largura da barra de rolagem no Firefox */
     scrollbar-color: #000 #ccc;
-    /* Define as cores da "pegada" e da trilha no Firefox */
     line-height: normal;
+    font-family: "Gill Sans Nova", sans-serif;
+    /* Defina sua fonte padrão */
 }
 
+/* Container principal */
 .main-container {
     overflow: hidden;
 }
 
+/* Garante que todos os elementos dentro de .main-container usem box-sizing: border-box */
 .main-container,
 .main-container * {
     box-sizing: border-box;
 }
 
+/* Remove outline padrão de inputs, selects, etc. */
 input,
 select,
 textarea,
@@ -48,6 +37,7 @@ button {
     outline: 0;
 }
 
+/* Estilização da scrollbar para navegadores Webkit */
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
@@ -56,11 +46,11 @@ button {
 ::-webkit-scrollbar-thumb {
     background-color: #000;
     border-radius: 10px;
-    border: 2px solid #FFF;
+    border: 2px solid #fff;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -144,8 +134,39 @@ nav {
 }
 
 .triangulo {
-    padding-left: 15em;
-    margin-top: -1.1em;
+    padding-left: 14.6em;
+    margin-top: -1em;
+}
+
+
+.music-player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 46rem;
+    margin-left: 89rem;
+    z-index: 2;
+}
+
+.control-button {
+    padding: 6px;
+    font-size: 6px;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-button:hover {
+    background-color: #00000068;
+}
+
+.control-button svg {
+    fill: #fff;
 }
 
 .year {
@@ -205,7 +226,6 @@ nav {
 .meses-navigation li {
     list-style: none;
 
-
 }
 
 .meses-navigation li a {
@@ -221,7 +241,6 @@ nav {
     letter-spacing: -0.21px;
 }
 
-
 /*main*/
 .festival {
     display: grid;
@@ -229,7 +248,6 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     margin: 15em auto;
-
 
 }
 
@@ -264,7 +282,7 @@ nav {
     /* 41.7px */
     letter-spacing: 1.2px;
     padding-top: 2rem;
-    
+
 }
 
 .collum p span {
@@ -286,12 +304,12 @@ nav {
     margin-top: 2rem;
 }
 
+
+
 /* Estilos do link */
 .vetor a {
     display: flex;
-    /* Torna o link um container flexível */
     align-items: center;
-    /* Alinha os itens verticalmente no centro */
     color: #000;
     font-family: "Gill Sans MT";
     font-size: 32px;
@@ -304,13 +322,10 @@ nav {
     text-align: center;
 }
 
-/* Espaçamento entre a imagem e o texto */
 .vetor a img {
     margin-right: 10px;
-    /* Ajuste conforme necessário */
 }
 
-/* Estilos adicionais para o texto dentro do link */
 .vetor a span {
     display: inline-block;
 }
@@ -332,7 +347,6 @@ nav {
     justify-content: flex-start;
     color: #FFF;
     width: 319px;
-
     font-family: "Gill Sans MT";
     font-size: 45px;
     font-style: normal;
@@ -423,330 +437,6 @@ nav {
     letter-spacing: 1.98px;
 }
 
-.o-festival {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 6.47%;
-    top: 0;
-    left: 5.37%;
-    color: #000;
-    font-family: "Gill Sans MT";
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32.9px;
-    text-align: left;
-    white-space: nowrap;
-    letter-spacing: -0.35px;
-    text-decoration: none;
-    z-index: 38;
-}
-
-.vector-1 {
-    position: absolute;
-    width: 22.13%;
-    height: 99.41%;
-    top: 0.59%;
-    left: 51.64%;
-    background: url(public/images/vector-meses.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 7;
-}
-
-.rectangle {
-    flex-shrink: 0;
-    position: relative;
-    width: 27px;
-    height: 276px;
-    z-index: 57;
-}
-
-.rectangle-3 {
-    flex-shrink: 0;
-    position: relative;
-    width: 27px;
-    height: 276px;
-    z-index: 58;
-}
-
-
-.belem {
-    flex-shrink: 0;
-    position: relative;
-    height: 20px;
-    color: #000;
-    font-family: "Gill Sans Nova";
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 94%;
-    letter-spacing: -0.21px;
-    text-decoration: none;
-    z-index: 44;
-}
-
-.soure {
-    flex-shrink: 0;
-    position: relative;
-    height: 20px;
-    color: #000;
-    font-family: "Gill Sans Nova";
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 94%;
-    letter-spacing: -0.21px;
-    text-decoration: none;
-    z-index: 45;
-}
-
-.shape-with-text-4 {
-    position: absolute;
-    width: 23.85%;
-    height: 62.75%;
-    top: 0.78%;
-    left: 76.01%;
-    font-size: 0px;
-    background: #000000;
-    border-radius: 50%;
-    z-index: 4;
-}
-
-.text-8 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 227px;
-    height: 139px;
-    margin: 47px 0 0 47px;
-    color: #FFF;
-    text-align: center;
-    font-family: "Gill Sans Nova";
-    font-size: 115px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 150%;
-    letter-spacing: -1.265px;
-    z-index: 5;
-
-}
-
-.shape-with-text-5 {
-    position: relative;
-    width: 211px;
-    height: 16px;
-    margin: 17px 0 0 53px;
-    background: #ffffff;
-    z-index: 6;
-}
-
-
-.button {
-    position: absolute;
-    width: 23.47%;
-    height: 14.9%;
-    top: 23.73%;
-    left: 0.22%;
-    cursor: pointer;
-    background: #000000;
-    border: none;
-    z-index: 52;
-}
-
-.programacao {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 36.84%;
-    top: 31.58%;
-    left: 12.38%;
-    color: #FFF;
-    font-family: "Gill Sans MT";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 94%;
-    letter-spacing: -2.1px;
-    text-decoration: none;
-    z-index: 53;
-}
-
-.vector-programacao {
-    display: flex;
-    margin-left: 11.1rem;
-    margin-top: 4.7rem;
-}
-
-.component {
-    position: absolute;
-    width: 459px;
-    height: 270px;
-    top: 196px;
-    left: 180px;
-    background: url(./assets/images/3d2975d6-2030-4b52-a251-80a98d17d4cf.png) no-repeat center;
-    background-size: cover;
-    z-index: 54;
-}
-
-.crato {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 3.92%;
-    top: 78.04%;
-    left: 70.57%;
-    color: #000;
-    font-family: "Gill Sans Nova";
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 94%;
-    letter-spacing: -0.21px;
-    text-decoration: none;
-    z-index: 47;
-}
-
-.fortaleza {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 3.92%;
-    top: 78.04%;
-    left: 77.72%;
-    color: #000;
-    font-family: "Gill Sans Nova";
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 94%;
-    letter-spacing: -0.21px;
-    text-decoration: none;
-    z-index: 46;
-}
-
-.jericoacoara {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 3.92%;
-    top: 78.04%;
-    left: 88.3%;
-    color: #000;
-    font-family: "Gill Sans Nova";
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 94%;
-    letter-spacing: -0.21px;
-    text-decoration: none;
-    z-index: 48;
-}
-
-.flex-row-b {
-    position: relative;
-    width: 1303px;
-    height: 1188px;
-    margin: 118px 0 0 137px;
-    z-index: 55;
-}
-
-.o-festival-8 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    width: 35.99%;
-    height: 10.1%;
-    top: -4rem;
-    left: 0;
-    color: #000;
-    text-align: center;
-    font-family: "Gill Sans Ultra Bold";
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: -0.88px;
-    z-index: 3;
-}
-
-.shape-with-text-9 {
-    position: absolute;
-    width: 55.79%;
-    height: 99.92%;
-    top: 0.08%;
-    left: 44.10%;
-    font-size: 0px;
-    background: #000000;
-    z-index: 8;
-    border-radius: 6px;
-}
-
-.centro-cultural-sambaiba-a {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
-    width: 419px;
-    height: 249px;
-    margin: 78px 0 0 99px;
-    color: #FFF;
-    font-family: "Gill Sans Ultra Bold";
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 118%;
-    /* 82.6px */
-    letter-spacing: -0.77px;
-    z-index: 31;
-    overflow: hidden;
-}
-
-.shape-with-text-b {
-    position: relative;
-    width: 434px;
-    height: 76px;
-    margin: 57px 0 0 99px;
-    background: #ffffff;
-    z-index: 10;
-    border-radius: 6px;
-}
-
-.firmando-nosso-compromisso {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    width: 505px;
-    margin: 56px 0 0 99px;
-    color: #FFF;
-    font-family: "Gill Sans Nova";
-    font-size: 33px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 134%;
-    /* 44.22px */
-    letter-spacing: 1.32px;
-    z-index: 32;
-}
-
-.vector-c {
-    position: absolute;
-    width: 6.74%;
-    height: 4.13%;
-    top: 88.46%;
-    left: 14.31%;
-    background: url(public/images/conhecabranco.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 25;
-}
-
 .conheca {
     display: flex;
     align-items: flex-start;
@@ -766,176 +456,6 @@ nav {
     z-index: 9;
 }
 
-.rectangle-d {
-    position: absolute;
-    width: 36.45%;
-    height: 5.98%;
-    top: 11.03%;
-    left: 0.31%;
-    background: #000000;
-    z-index: 55;
-}
-
-.iniciado-em {
-    position: absolute;
-    width: 36.07%;
-    height: 36.2%;
-    top: 21.04%;
-    left: 0.54%;
-    font-family: Gill Sans MT, var(--default-font-family);
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 41.7px;
-    text-align: left;
-    letter-spacing: 1.2px;
-    z-index: 33;
-}
-
-.text-12 {
-    position: relative;
-    color: #000;
-    font-family: "Gill Sans Nova";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 139%;
-    letter-spacing: 1.2px;
-}
-
-.importancia-descentralizacao-cultural {
-    position: relative;
-    color: #000;
-    font-family: "Gill Sans Nova";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 139%;
-    letter-spacing: 1.2px;
-}
-
-.vector-e {
-    position: absolute;
-    width: 3.76%;
-    height: 4.12%;
-    top: 65%;
-    left: 0.77%;
-    background: url(public/images/conheca.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 24;
-}
-
-.conheca-f {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 2.53%;
-    top: 60.69%;
-    left: 5.99%;
-    color: #000;
-    font-family: "Gill Sans MT";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 94%;
-    letter-spacing: 1.28px;
-    text-decoration: none;
-    z-index: 30;
-}
-
-.flex-row-10 {
-    position: relative;
-    width: 1327px;
-    height: 649px;
-    margin: 0 0 0 -1px;
-    z-index: 36;
-}
-
-.rectangle-11 {
-    position: absolute;
-    width: 715px;
-    height: 642px;
-    top: 0;
-    left: 0;
-    background: url(public/images/fotopremio.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 11;
-}
-
-.regroup-12 {
-    position: absolute;
-    width: 5.73%;
-    height: 100%;
-    top: 0;
-    left: 93.59%;
-    z-index: 15;
-}
-
-.vector-13 {
-    position: absolute;
-    width: 37px;
-    height: 37px;
-    top: 69.65%;
-    left: 29%;
-    background: url(public/images/capucho.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 14;
-}
-
-.vector-14 {
-    position: absolute;
-    width: 37px;
-    height: 37px;
-    top: 69.65%;
-    left: 79.63%;
-    background: url(public/images/capucho.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 15;
-}
-
-.vector-15 {
-    position: absolute;
-    width: 37px;
-    height: 37px;
-    top: 14.64%;
-    left: 59.16%;
-    background: url(public/images/capucho.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 12;
-}
-
-.vector-16 {
-    position: absolute;
-    width: 37px;
-    height: 37px;
-    top: 14.64%;
-    left: 62.09%;
-    background: url(public/images/capucho.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 13;
-}
-
-.sonho-transformar-vida {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    width: 452px;
-    height: 297px;
-    top: 17.88%;
-    left: 64.69%;
-    color: #000;
-    font-family: "Gill Sans Nova", sans-serif;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 146%;
-    text-align: left;
-    letter-spacing: 2.07px;
-    z-index: 34;
-}
-
-
 .shape-with-text-17 {
     position: relative;
     width: 100%;
@@ -948,6 +468,9 @@ nav {
 
 
 .flex-row-b-18 {
+    display: flex;  
+    flex-direction: column;
+    
     position: relative;
     width: 1234px;
     height: 113px;
@@ -986,17 +509,6 @@ nav {
     z-index: 21;
 }
 
-.vector-19 {
-    position: absolute;
-    width: 0.05%;
-    height: 60.18%;
-    top: 13.27%;
-    left: 58.08%;
-    background: url(./assets/images/157aff07-2266-4b60-832f-bfacf53a7047.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 27;
-}
-
 .inputform {
     display: flex;
 
@@ -1011,10 +523,28 @@ nav {
     background: transparent;
     border-left: 2px solid #FFF;
     border-bottom: 2px solid #FFF;
+    border-right: 2px solid #FFF;
     border-top: none;
-    border-right: none;
     z-index: 29;
     padding-left: 0.5rem;
+    color: #FFF;
+    font-family: "Gill Sans Nova";
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 1.98px;
+    outline: none;
+}
+
+.rectangle-1a:focus {
+    border-color: #FFF;
+
+}
+
+.rectangle-1a::placeholder {
+    color: transparent;
+
 }
 
 .seu-e-mail {
@@ -1023,15 +553,18 @@ nav {
     height: 33.63%;
     top: 31.86%;
     left: 60.53%;
-    color: #ffffff;
-    font-family: Gill Sans Nova, var(--default-font-family);
+    color: #FFF;
+    font-family: "Gill Sans Nova";
     font-size: 22px;
+    font-style: italic;
     font-weight: 400;
     line-height: 32.12px;
     text-align: left;
     letter-spacing: 1.98px;
     z-index: 22;
     overflow: hidden;
+    margin-left: -3rem;
+    margin-top: 1rem;
 }
 
 .rectangle-1b {
@@ -1044,6 +577,7 @@ nav {
     background: #ffffff;
     z-index: 23;
     outline: none;
+
 }
 
 .enviar {
@@ -1065,7 +599,7 @@ nav {
     z-index: 37;
 }
 
-.inscreva-se-para-receber {
+.inscreva {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -1085,15 +619,6 @@ nav {
     letter-spacing: -0.242px;
 }
 
-.vector-1c {
-    position: absolute;
-    width: 28px;
-    height: 13px;
-    background: url(public/images/vetorNew.png) no-repeat center;
-    padding-left: 64rem;
-    margin-top: -4.5rem;
-}
-
 .vector-1d {
     position: relative;
     width: 527px;
@@ -1108,37 +633,12 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 12em;
-    margin-top: 1rem;
-    width: 1131px;
-    height: 396px;
-    flex-shrink: 0;
-}
+    margin-left: 6rem;
+    margin-top: -10rem;
+    margin-bottom: -5rem;
+    width: 1408px;
+    height: 749px;
 
-.etc {
-    display: block;
-    position: relative;
-    height: 33px;
-    margin: 167px 0 0 109px;
-    color: #ffffff;
-    font-family: Gill Sans Nova, var(--default-font-family);
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 27.74px;
-    text-align: left;
-    white-space: nowrap;
-    letter-spacing: 1.71px;
-    z-index: 19;
-}
-
-.rectangle-1e {
-    position: absolute;
-    width: 100%;
-    height: 19.63%;
-    top: 0;
-    left: -0.07%;
-    background: url(./assets/images/c6bc4542-5d9b-40cc-867b-40355b4c6e1e.png) no-repeat center;
-    background-size: 100% 100%;
 }
 
 .reservados {
@@ -1155,4 +655,307 @@ nav {
     font-style: italic;
     font-size: 13px;
     line-height: normal;
+}
+
+/* Media Query para telas maiores até 1920px */
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 1120px) {
+
+    .logo-capa {
+        border-radius: 6px;
+        background-color: #000;
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        top: 3px;
+        left: 1px;
+    }
+
+    .vetor-capa {
+        display: none;
+    }
+
+    .music-player {
+        margin-bottom: 5rem;
+        margin-left: 43rem;
+    }
+
+    .control-button {
+        padding: 6px;
+        font-size: 6px;
+        color: #fff;
+        background-color: #000000;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .control-button:hover {
+        background-color: #00000068;
+    }
+
+    .control-button svg {
+        fill: #fff;
+    }
+
+
+    .triangulo {
+        margin-right: -3rem;
+        margin-left: -0.1rem;
+    }
+
+    #navegacao {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 4rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        width: 100%;
+        gap: 7rem;
+    }
+
+    .nav-link {
+        margin-bottom: 3rem;
+        /* Adiciona margem inferior para espaçamento */
+    }
+
+    .year {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 24rem;
+    }
+
+    .meses-navigation li a {
+        font-size: 24px;
+    }
+
+    .festival {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collum,
+    .collum2 {
+        width: 100%;
+    }
+
+    .collumFoto {
+        width: 100%;
+        margin-left: 1.5rem;
+    }
+
+    .patrocinios {
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .flex-row-b-18 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .rectangle-1a {
+        
+    }
+}
+
+/* Media Query para celulares */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .logo-capa {
+        border-radius: 6px;
+        background-color: #000;
+        width: 397px;
+        height: 143px;
+        position: absolute;
+        top: 3px;
+        left: 1px;
+    }
+
+    .vetor-capa {
+        display: none;
+    }
+
+    .festival-nav-link img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+
+
+    }
+
+    .imagem-festival {
+        width: 159px;
+    }
+
+    .music-player {
+        margin-bottom: 37rem;
+        margin-left: 19rem;
+    }
+
+    .triangulo {
+        margin-left: -11em;
+        height: 212px;
+
+    }
+
+    .vector-programacao {
+        display: flex;
+        margin-left: 11.1rem;
+        margin-top: 4.7rem;
+    }
+
+    #navegacao {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 4em;
+    }
+
+    nav {
+        margin-top: 5rem;
+        margin-left: -43rem;
+        width: 100%;
+        margin-top: -22rem;
+    }
+
+    .nav-link {
+        margin-bottom: 3rem;
+    }
+
+    .meses {
+        margin-left: -36rem;
+        margin-top: 49rem;
+    }
+
+    .meses-navigation {
+        list-style-type: none;
+        padding: 0;
+        margin-right: 44.6rem;
+    }
+
+    .meses-navigation li {
+        margin-bottom: 0.5rem;
+
+    }
+
+    .meses-navigation li a {
+        display: block;
+        font-size: 12px;
+        font-weight: 800;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .yearImg {
+        margin-left: -25rem;
+        margin-bottom: -102rem;
+    }
+
+
+    .festival {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 31rem;
+    }
+
+    .collum,
+    .collum2 {
+        width: 100%;
+    }
+
+
+    .centro  {
+        margin-left: -3rem;
+    }
+
+    .cent {
+        width: 359px;
+        height: 213px;
+        margin-left: 4rem;
+
+    }
+
+    .cent-retangulo {
+        width: 360px;
+        height: 76px;
+        margin-left: 4rem;
+
+    }
+    .centro p {
+        width: 80%;
+        font-size: 28px;
+        margin-left: 4rem;
+        margin-top: -1rem;
+        
+    }
+
+    .vetor {
+        padding: 2rem;
+        margin-left: -10rem;
+    }
+
+    .vetor img{
+        width: 35px;
+    }
+
+    
+    .fest {
+        width: 375px;
+        margin-top: 3rem;
+    }
+    
+    .retangulo {
+        width: 375px;
+        height: 86px;
+        margin-top: -1rem;
+    }
+
+    .collum p {
+        width: 90%;
+        font-size: 30px;
+
+    }
+    
+    .collum p span {
+        font-size: 28px;
+        
+    }
+
+    .collumFoto {
+        margin-top: -32rem;
+        z-index: -1;
+    }
+
+    #capuchoText {
+        width: 80%;
+        font-size: 23px;
+        margin-top: 1rem;
+    }
+
+    .setas {
+        display: none;
+    }
+
+    .name span{
+        w
+    }
+    
+
 }
