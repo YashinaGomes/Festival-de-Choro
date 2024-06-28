@@ -4,9 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-	width: 100%;
-	height: 100%;
+
+html,
+body {
+    width: 100%;
+    height: 100%;
 }
 
 /* Estilos gerais */
@@ -243,21 +245,32 @@ nav {
 
 /*main*/
 .festival {
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin: 15em auto;
+    margin-top: 12rem;
 
 }
 
-.collum,
+.collum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF;
+    margin-top: -12rem;
+    flex: 1;
+
+
+}
+
 .collum2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #FFF;
+    min-height: 726px;
     height: 1187px;
+    flex: 1;
+
 
 }
 
@@ -333,6 +346,7 @@ nav {
 .collum2 {
     background-color: #000000;
     border-radius: 6px;
+    padding: -9rem;
 }
 
 .centro {
@@ -368,10 +382,6 @@ nav {
     font-size: 33px;
     font-style: normal;
     font-weight: 400;
-    line-height: 134%;
-    /* 44.22px */
-    letter-spacing: 1.32px;
-    padding-top: 5rem;
 }
 
 #text {
@@ -384,11 +394,6 @@ nav {
     margin-top: -15rem;
 }
 
-.collumFoto {
-    width: 716px;
-    height: 643px;
-}
-
 .setas {
     display: flex;
     justify-content: flex-start;
@@ -397,7 +402,14 @@ nav {
     margin-bottom: -3rem;
 }
 
+
 #capuchoText {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF;
+    flex: 1;
     color: #000;
     font-family: "Gill Sans Nova";
     font-size: 23px;
@@ -406,7 +418,17 @@ nav {
 
 }
 
+.fotoCapucho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 766px;
+    height: 643px;
+    left: -1px;
+    margin-top: -12rem;
 
+}
 
 #seta2 {
     margin-left: 0;
@@ -421,9 +443,8 @@ nav {
     font-style: normal;
     font-weight: 700;
     line-height: 146%;
-    /* 33.58px */
     letter-spacing: 2.07px;
-    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .name span {
@@ -432,16 +453,12 @@ nav {
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
-    line-height: 146%;
-    /* 32.12px */
-    letter-spacing: 1.98px;
 }
 
 .conheca {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    position: absolute;
     height: 2.53%;
     top: 89.3%;
     left: 23.52%;
@@ -457,153 +474,122 @@ nav {
 }
 
 .shape-with-text-17 {
-    position: relative;
+    display: flex;
     width: 100%;
     height: 432px;
-    margin: -44.1rem 0 0 0;
     background: #000000;
-    z-index: 16;
-    overflow: visible auto;
+    flex-direction: column;
 }
-
 
 .flex-row-b-18 {
-    display: flex;  
-    flex-direction: column;
-    
-    position: relative;
-    width: 1234px;
-    height: 113px;
-    margin: 69px 0 0 89px;
-    z-index: 29;
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem;
+
 }
+
+.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: -13rem;
+   
+}
+
 
 .newsletter {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    position: absolute;
-    width: 17.18%;
-    height: 53.1%;
-    top: 0;
-    left: 21.72%;
-    color: #ffffff;
-    font-family: Gill Sans Nova, var(--default-font-family);
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
+    color: #FFF;
     text-align: center;
-    white-space: nowrap;
-    letter-spacing: -0.44px;
-    z-index: 17;
+    font-family: "Gill Sans Nova";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+
+
 }
 
 .logo-footer {
-    position: absolute;
-    width: 16.86%;
-    height: 88.5%;
-    top: 5.31%;
-    left: 0;
-    background: url(./assets/images/9149ab38-f954-48e1-bbad-b280c70589c2.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
 .inputform {
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 2rem;
 
 }
 
 .rectangle-1a {
-    position: absolute;
     width: 456px;
-    height: 68px;
-    top: 30.97%;
-    left: 53.9%;
+    height: 55px;
     background: transparent;
     border-left: 2px solid #FFF;
     border-bottom: 2px solid #FFF;
     border-right: 2px solid #FFF;
     border-top: none;
-    z-index: 29;
-    padding-left: 0.5rem;
     color: #FFF;
     font-family: "Gill Sans Nova";
     font-size: 22px;
     font-style: italic;
     font-weight: 400;
-    line-height: 68px;
-    letter-spacing: 1.98px;
-    outline: none;
+    padding-left: 10px;
 }
 
 .rectangle-1a:focus {
     border-color: #FFF;
-
+    background: transparent;
 }
 
 .rectangle-1a::placeholder {
-    color: transparent;
-
+    color: #FFF;
+    opacity: 0.7;
 }
 
 .seu-e-mail {
-    position: absolute;
-    width: 9.56%;
-    height: 33.63%;
-    top: 31.86%;
-    left: 60.53%;
     color: #FFF;
     font-family: "Gill Sans Nova";
     font-size: 22px;
     font-style: italic;
     font-weight: 400;
     line-height: 32.12px;
-    text-align: left;
-    letter-spacing: 1.98px;
-    z-index: 22;
-    overflow: hidden;
-    margin-left: -3rem;
-    margin-top: 1rem;
+    text-align: center;
 }
+
+
 
 .rectangle-1b {
     border: none;
-    position: absolute;
-    width: 9.4%;
-    height: 68px;
-    top: 31.86%;
-    left: 90.6%;
+    width: 110px;
+    height: 55px;
     background: #ffffff;
-    z-index: 23;
-    outline: none;
-
 }
 
 .enviar {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    position: absolute;
-    height: 79.17%;
-    top: 6.25%;
-    left: 15.52%;
-    color: #000000;
-    font-family: Gill Sans Nova, var(--default-font-family);
+    color: #000;
+    font-family: "Gill Sans Nova";
     font-size: 25px;
+    font-style: normal;
     font-weight: 700;
-    line-height: 36.5px;
-    text-align: left;
-    white-space: nowrap;
-    letter-spacing: 2.25px;
-    z-index: 37;
+    margin-left: 1.1rem;
+
 }
 
 .inscreva {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    position: absolute;
     width: 218px;
     height: 51.33%;
     top: 48.67%;
@@ -620,14 +606,15 @@ nav {
 }
 
 .vector-1d {
-    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 6.7rem;
     width: 527px;
     height: 26px;
-    margin: 93px 0 0 110px;
-    background: url(public/images/vectorpatrocinadores.png) no-repeat center;
-    background-size: 100% 100%;
-    z-index: 28;
+    background: url(public/images/vectorpatrocinadores.png) no-repeat left;
 }
+
 
 .patrocinios {
     display: flex;
@@ -658,9 +645,11 @@ nav {
 }
 
 /* Media Query para telas maiores até 1920px */
-@media only screen and (min-width: 1025px) and (max-width: 1920px) {}
+/* @media only screen and (min-width: 1025px) and (max-width: 1920px) {
 
-@media only screen and (min-width: 768px) and (max-width: 1120px) {
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
     .logo-capa {
         border-radius: 6px;
@@ -747,16 +736,6 @@ nav {
         align-items: center;
     }
 
-    .collum,
-    .collum2 {
-        width: 100%;
-    }
-
-    .collumFoto {
-        width: 100%;
-        margin-left: 1.5rem;
-    }
-
     .patrocinios {
         width: 100%;
         margin-left: 1rem;
@@ -767,10 +746,6 @@ nav {
         flex-direction: column;
         align-items: flex-start;
 
-    }
-
-    .rectangle-1a {
-        
     }
 }
 
@@ -875,13 +850,7 @@ nav {
         margin-top: 31rem;
     }
 
-    .collum,
-    .collum2 {
-        width: 100%;
-    }
-
-
-    .centro  {
+    .centro {
         margin-left: -3rem;
     }
 
@@ -898,12 +867,13 @@ nav {
         margin-left: 4rem;
 
     }
+
     .centro p {
         width: 80%;
         font-size: 28px;
         margin-left: 4rem;
         margin-top: -1rem;
-        
+
     }
 
     .vetor {
@@ -911,16 +881,16 @@ nav {
         margin-left: -10rem;
     }
 
-    .vetor img{
+    .vetor img {
         width: 35px;
     }
 
-    
+
     .fest {
         width: 375px;
         margin-top: 3rem;
     }
-    
+
     .retangulo {
         width: 375px;
         height: 86px;
@@ -932,30 +902,24 @@ nav {
         font-size: 30px;
 
     }
-    
+
     .collum p span {
         font-size: 28px;
-        
+
     }
 
-    .collumFoto {
-        margin-top: -32rem;
-        z-index: -1;
-    }
+    .collumFoto {}
 
     #capuchoText {
-        width: 80%;
-        font-size: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2px;
         margin-top: 1rem;
     }
 
     .setas {
         display: none;
     }
-
-    .name span{
-        w
-    }
-    
 
 }
