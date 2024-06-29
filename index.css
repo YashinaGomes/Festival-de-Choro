@@ -256,27 +256,60 @@ nav {
     flex-direction: column;
     align-items: center;
     background: #FFF;
-    margin-top: -12rem;
+    margin-top: 6rem;
     flex: 1;
+    height: 1187px;
+}
 
+.collum3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF;
+    margin-top: -10rem;
+    flex: 1;
+    width: 720px;
+    height: 643px;
+}
+
+.collum3 p {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 470px;
+    color: #000;
+    font-family: "Gill Sans Nova";
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 2rem;
+
+}
+
+.collum3 p span {
+    color: #000;
+    font-family: "Gill Sans Nova";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
 
 }
 
 .collum2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     background: #FFF;
     min-height: 726px;
-    height: 1187px;
     flex: 1;
+
 
 
 }
 
 .fest {
     width: 475px;
-    margin-top: 3rem;
+    margin-top: -4rem;
+
 }
 
 .retangulo {
@@ -285,15 +318,14 @@ nav {
 }
 
 .collum p {
+    display: flex;
+    flex-direction: column-reverse;
     width: 470px;
     color: #000;
     font-family: "Gill Sans Nova";
     font-size: 33px;
     font-style: normal;
     font-weight: 400;
-    line-height: 139%;
-    /* 41.7px */
-    letter-spacing: 1.2px;
     padding-top: 2rem;
 
 }
@@ -304,8 +336,7 @@ nav {
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
-    line-height: 139%;
-    letter-spacing: 1.2px;
+
 }
 
 .vetor {
@@ -316,8 +347,6 @@ nav {
     margin-left: -18em;
     margin-top: 2rem;
 }
-
-
 
 /* Estilos do link */
 .vetor a {
@@ -343,6 +372,39 @@ nav {
     display: inline-block;
 }
 
+.vetorfest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    margin-left: -18em;
+    margin-top: 2rem;
+}
+
+
+.vetorfest a {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: "Gill Sans MT";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94%;
+    /* 30.08px */
+    letter-spacing: 1.28px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.vetorfest a img {
+    margin-right: 10px;
+}
+
+.vetorfest a span {
+    display: inline-block;
+}
+
 .collum2 {
     background-color: #000000;
     border-radius: 6px;
@@ -351,7 +413,7 @@ nav {
 
 .centro {
     padding-top: 4rem;
-    margin-left: -2rem;
+    margin-left: 6rem;
 
 }
 
@@ -424,9 +486,10 @@ nav {
     align-items: center;
     flex: 1;
     width: 766px;
-    height: 643px;
+    min-height: 643px;
     left: -1px;
     margin-top: -12rem;
+    border-radius: 0 6px 0 0;
 
 }
 
@@ -442,9 +505,8 @@ nav {
     font-size: 23px;
     font-style: normal;
     font-weight: 700;
-    line-height: 146%;
-    letter-spacing: 2.07px;
     margin-bottom: 2rem;
+
 }
 
 .name span {
@@ -453,6 +515,7 @@ nav {
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
+
 }
 
 .conheca {
@@ -494,7 +557,7 @@ nav {
     align-items: center;
     margin-top: 1rem;
     margin-left: -13rem;
-   
+
 }
 
 
@@ -516,8 +579,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 }
 
 .inputform {
@@ -644,11 +707,6 @@ nav {
     line-height: normal;
 }
 
-/* Media Query para telas maiores até 1920px */
-/* @media only screen and (min-width: 1025px) and (max-width: 1920px) {
-
-} */
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
     .logo-capa {
@@ -666,7 +724,8 @@ nav {
     }
 
     .music-player {
-        margin-bottom: 5rem;
+        display: flex;
+        align-items: center;
         margin-left: 43rem;
     }
 
@@ -701,7 +760,7 @@ nav {
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-left: 4rem;
+        margin-left: rem;
     }
 
     nav {
@@ -715,7 +774,7 @@ nav {
 
     .nav-link {
         margin-bottom: 3rem;
-        /* Adiciona margem inferior para espaçamento */
+
     }
 
     .year {
@@ -734,19 +793,161 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 10rem;
+        gap: 5rem;
     }
 
-    .patrocinios {
-        width: 100%;
-        margin-left: 1rem;
+    .centro {
+        width: 80%;
+        height: 1650px;
+        margin-left: 7rem;
+
+    }
+
+    .cent {
+        width: 559px;
+        height: 313px;
+
+
+    }
+
+    .cent-retangulo {
+        width: 560px;
+        height: 90px;
+
+
+    }
+
+    .collum2 p {
+        display: flex;
+        background-color: #000000;
+        border-radius: 6px;
+        margin-top: 4rem;
+        width: 77%;
+        font-size: 40px;
+
+    }
+
+    .festival {
+        display: flex;
+        justify-content: center;
+        margin-top: 12rem;
+
+    }
+
+    .fest {
+        width: 675px;
+
+    }
+
+    .retangulo {
+        padding-top: 34px;
+        width: 675px;
+    }
+
+    .collum p {
+        width: 77%;
+        font-size: 40px;
+
+    }
+
+    .collum3 {
+        margin-top: 1rem;
+    }
+
+    .collum p span {
+        font-size: 47px;
+
+    }
+
+    .vetor {
+        padding: 5rem;
+        margin-left: -37rem;
+
+    }
+
+    .vetor img {
+        width: 45px;
+    }
+
+    .vetorfest {
+        padding: 6rem;
+        margin-left: -24rem;
+    }
+
+    .vetorfest img {
+        width: 55px;
+    }
+
+    .vetorfest a span {
+        font-size: 55px;
+    }
+
+    .vetor a span {
+        font-size: 46px;
+    }
+
+    .fotoCapucho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -22rem;
+        width: 873px;
+        height: 671px;
+        border-radius: 6px;
+
+    }
+
+    #capuchoText {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+        margin-top: 1rem;
+        width: 110%;
+    }
+
+    .setas {
+        display: none;
+    }
+
+    .name {
+        margin-top: -7rem;
+        margin-left: -2rem;
     }
 
     .flex-row-b-18 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-top: -2rem;
 
     }
+
+    .newsletter-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -7rem;
+        margin-left: 16rem;
+
+    }
+
+    .rectangle-1a {
+        width: 350px;
+        margin-left: 0.7rem;
+    }
+
+
+    .patrocinios {
+        width: 739px;
+        height: 466px;
+        margin-left: 4rem;
+        
+       
+
+
 }
 
 /* Media Query para celulares */
@@ -770,7 +971,6 @@ nav {
         max-width: 100%;
         height: auto;
         display: block;
-
 
     }
 
@@ -847,11 +1047,15 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 31rem;
+        padding-top: 30rem;
+        gap: 5rem;
+
     }
 
     .centro {
+        height: 1090px;
         margin-left: -3rem;
+
     }
 
     .cent {
@@ -863,7 +1067,7 @@ nav {
 
     .cent-retangulo {
         width: 360px;
-        height: 76px;
+        height: 90px;
         margin-left: 4rem;
 
     }
@@ -872,16 +1076,25 @@ nav {
         width: 80%;
         font-size: 28px;
         margin-left: 4rem;
-        margin-top: -1rem;
+        margin-top: 3rem;
 
     }
 
     .vetor {
         padding: 2rem;
-        margin-left: -10rem;
+        margin-left: -9rem;
     }
 
     .vetor img {
+        width: 35px;
+    }
+
+    .vetorfest {
+        padding: 2rem;
+        margin-left: -11rem;
+    }
+
+    .vetorfest img {
         width: 35px;
     }
 
@@ -908,18 +1121,34 @@ nav {
 
     }
 
-    .collumFoto {}
-
     #capuchoText {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 2px;
+        font-size: 16px;
         margin-top: 1rem;
     }
 
     .setas {
         display: none;
+    }
+
+    .fotoCapucho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 783px;
+        height: 671px;
+        border-radius: 6px;
+
+    }
+
+    .patrocinios {
+        width: 381px;
+        height: 241px;
+        margin-left: 1rem;
+        margin-top: 0.1rem;
+        margin-bottom: 1rem;
     }
 
 }
