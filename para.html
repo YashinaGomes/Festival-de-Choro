@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choro Jazz Festival</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gill+Sans+Ultra+Bold:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gill+Sans+Nova:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gill+Sans+MT:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="para.css" />
+    <!-- Adicione seus estilos adicionais aqui -->
+</head>
+
+<body>
+    <header>
+        <div class="image-container" id="paraCapa">
+            <img class="rectangle-icon" src="assets/para.png" alt="Imagem do festival">
+            <div class="music-player">
+                <button id="play" class="control-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5V19L19 12L8 5Z" fill="white" />
+                    </svg>
+                </button>
+                <button id="pause" class="control-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 19H10V5H6V19ZM14 5V19H18V5H14Z" fill="white" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section id="navegacao">
+        <nav>
+            <div class="nav-link">
+                <ul class="festival-nav-link">
+                    <li><a href="#"><img class="imagem-festival" src="assets/festival.png" alt="Imagem com o texto O festival"></a></li>
+                    <li><a href="#"><img class="imagem-sambaiba" src="assets/centrocultural.png" alt="Imagem Centro Cultural Samambaia"></a></li>
+                    <li><a href="#"><img class="imagem-programacao" src="assets/programação.png" alt="Imagem Programação"></a></li>
+                </ul>
+                <figure><img class="triangulo" src="assets/triangula.png" alt=""></figure>
+            </div>
+            <div class="year">
+                <section>
+                    <div class="meses">
+                        <ul class="meses-list">
+                            <li><img src="assets/julho.png" alt=""></li>
+                            <li class="mesesNav"><img src="assets/setembro.png" alt=""></li>
+                            <li class="mesesNav"><img src="assets/novembro.png" alt=""></li>
+                            <li class="mesesNav"><img src="assets/dezembro.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <figure><img class="yearImg" src="assets/ano.png" alt=""></figure>
+                </section>
+                <ul class="meses-navigation">
+                    <li><a href="belem.html">Belém</a></li>
+                    <li><a href="soure.html">Soure</a></li>
+                    <li><a href="crato.html">Crato</a></li>
+                    <li><a href="fortaleza.html">Fortaleza</a></li>
+                    <li><a href="jericoacora.html">Jericoacoara</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <main>
+
+        <section class="agenda">
+
+            <div class="right-column">
+                <div class="agenda-item">
+                    <img src="assets/marajo.png" alt="">
+                </div>
+                <div class="agenda-item">
+                    <img src="assets/marajoSabado.png" alt="">
+                </div>
+                <div class="agenda-item">
+                    <img src="assets/marajoDomingo.png" alt="">
+                </div>
+                <div class="agenda-item">
+                    <img src="assets/belemAgenda.png" alt="">
+                </div>
+                <div class="agenda-item">
+                    <img src="assets/belemSabado.png" alt="">
+                </div>
+            </div>
+            <div class="left-column">
+                <div class="agenda-item big-item">
+
+                    <img src="assets/soure.png" alt="">
+
+                    <form class="formAgenda" action="" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone/WhatsApp (com DDD):</label>
+                            <input type="tel" id="phone" name="phone" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(99) 99999-9999" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="workshop">Escolha as Oficinas para participar:</label>
+                            <select id="workshop" name="workshop" required>
+                                <option value="piano">Selecione uma oficina...</option>
+                                <option value="piano">Piano</option>
+                                <option value="bateria">Bateria</option>
+                                <option value="composicao">Composição</option>
+                                <option value="tecnicas">Técnicas para músicos</option>
+                                <option value="banjo">Confecção de banjo</option>
+                                <option value="tambores">Confecção de tambores</option>
+                            </select>
+                        </div>
+                        <div class="formBtn">
+                            <button type="submit">Cancelar</button>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="artistas">
+
+            <img class="artImg" src="assets/artistas.png" alt="">
+
+          <div id="card-container" class="card-container">
+              <!-- Aqui serão gerados dinamicamente os cards -->
+          </div>
+      </section>
+
+    </main>
+
+    <footer class="shape-with-text-17">
+        <div class="flex-row-b-18">
+            <div class="logo-footer"><img class="logoFooter" src="assets/logo-footer-1.png" alt=""></div>
+            <div>
+                <div class="newsletter-container">
+                    <h2 class="newsletter">Newsletter</h2>
+                    <p class="inscreva">Inscreva-se para receber<br />novidades em seu e-mail.</p>
+                </div>
+            </div>
+            <div>
+                <form action="https://formspree.io/f/meojjyel" method="POST">
+                    <div class="inputform"><input type="email" id="email" class="rectangle-1a" placeholder="Seu e-mail" required><button type="submit" class="rectangle-1b"><span class="enviar">enviar</span></button></div>
+                </form>
+            </div>
+        </div>
+        <div class="vector-1d"></div>
+    </footer>
+    <img class="patrocinios" src="public/images/regua web.png" alt="Régua de patrocinadores">
+    <div class="reservados">
+        <h3>© 2024 Choro and Jazz. All rights reserved.</h3>
+    </div>
+
+    <!-- Scripts no final do arquivo -->
+    <script src="script.js"></script>
+    <script src="formfooter.js"></script>
+    <script src="card.js"></script>
+    <!-- Adicione outros scripts que você possa precisar -->
+
+</body>
+
+</html>
