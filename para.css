@@ -7,11 +7,12 @@
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: auto;
   width: 100%;
   margin-top: 10rem;
+  
 }
 
 .agenda {
@@ -26,16 +27,19 @@ main {
 .right-column {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 2;
   gap: 20px;
+  width: 100%;
 }
 
 .left-column {
   background: #000;
   height: 100%;
   flex-direction: column;
-  max-width: 650px;
+ 
   padding: 20px;
+  flex: 2;
+  width: 100%;
 }
 
 .agenda-item {
@@ -99,6 +103,11 @@ main {
   padding: 2rem;
   font-size: 14px;
 }
+
+.formAgenda option{
+  color: #000;
+}
+
 
 .formBtn {
   display: flex;
