@@ -89,7 +89,7 @@
 
                     <img src="assets/soure.png" alt="">
 
-                    <form class="formAgenda" action="" method="POST">
+                    <form class="formAgenda" action="https://formspree.io/f/meojjyel" method="POST">
                         <div class="form-group">
                             <label for="name">Nome:</label>
                             <input type="text" id="name" name="name" required>
@@ -100,12 +100,12 @@
                         </div>
                         <div class="form-group">
                             <label for="phone">Telefone/WhatsApp (com DDD):</label>
-                            <input type="tel" id="phone" name="phone" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(99) 99999-9999" required>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{2}[0-9]{4,5}[0-9]{4}" placeholder="99 99999-9999" required>
                         </div>
                         <div class="form-group">
                             <label for="workshop">Escolha as Oficinas para participar:</label>
                             <select id="workshop" name="workshop" required>
-                                <option value="piano">Selecione uma oficina...</option>
+                                <option id="option" value="" disabled selected>Selecione uma oficina...</option>
                                 <option value="piano">Piano</option>
                                 <option value="bateria">Bateria</option>
                                 <option value="composicao">Composição</option>
@@ -115,10 +115,13 @@
                             </select>
                         </div>
                         <div class="formBtn">
-                            <button type="submit">Cancelar</button>
+                            <button type="reset">Cancelar</button>
                             <button type="submit">Enviar</button>
                         </div>
                     </form>
+                    
+                    
+                    
                 </div>
 
             </div>
