@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         imgSrc1: './assets/cards/cruzeirinho.png',
         imgSrc2: './assets/cards/release.png',
-        link1: '#',
+        link1: '',
         link2: '#',
       },
       {
@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         link1: '#',
         link2: '#',
       },
+
+
       {
         imgSrc1: './assets/cards/mestreamelia.png',
         imgSrc2: './assets/cards/release.png',
@@ -31,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
   
     // Ordena as imagens em ordem alfabética com base no imgSrc1
+
     cardsData.sort((a, b) => {
       const imgSrcA = a.imgSrc1.toLowerCase();
       const imgSrcB = b.imgSrc1.toLowerCase();
