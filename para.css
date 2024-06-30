@@ -211,6 +211,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 5rem;
 }
 
 .card {
@@ -274,6 +275,11 @@ main {
   .formAgenda {
     width: 100%;
     height: auto;
+  }
+  
+  .formAgenda input {
+    width: 80%;
+
   }
 
   .card {
