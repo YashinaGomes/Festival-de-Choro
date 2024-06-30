@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="image-container" id="paraCapa">
-            <img class="rectangle-icon" src="assets/para.png" alt="Imagem do festival">
+            <img class="rectangle-icon" src="public/images/para.png" alt="Imagem do festival">
             <div class="music-player">
                 <button id="play" class="control-button">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,9 +35,9 @@
         <nav>
             <div class="nav-link">
                 <ul class="festival-nav-link">
-                    <li><a href="#"><img class="imagem-festival" src="assets/festival.png" alt="Imagem com o texto O festival"></a></li>
-                    <li><a href="#"><img class="imagem-sambaiba" src="assets/centrocultural.png" alt="Imagem Centro Cultural Samambaia"></a></li>
-                    <li><a href="#"><img class="imagem-programacao" src="assets/programação.png" alt="Imagem Programação"></a></li>
+                    <li><a href="index.html"><img class="imagem-festival" src="assets/festival.png" alt="Imagem com o texto O festival"></a></li>
+                    <li><a href="festival.html"><img class="imagem-sambaiba" src="assets/centrocultural.png" alt="Imagem Centro Cultural Samambaia"></a></li>
+                    <li><a href="para.html"><img class="imagem-programacao" src="assets/programação.png" alt="Imagem Programação"></a></li>
                 </ul>
                 <figure><img class="triangulo" src="assets/triangula.png" alt=""></figure>
             </div>
@@ -54,8 +54,8 @@
                     <figure><img class="yearImg" src="assets/ano.png" alt=""></figure>
                 </section>
                 <ul class="meses-navigation">
-                    <li><a href="belem.html">Belém</a></li>
-                    <li><a href="soure.html">Soure</a></li>
+                    <li><a href="para.html">Belém</a></li>
+                    <li><a href="para.html">Soure</a></li>
                     <li><a href="crato.html">Crato</a></li>
                     <li><a href="fortaleza.html">Fortaleza</a></li>
                     <li><a href="jericoacora.html">Jericoacoara</a></li>
@@ -72,22 +72,22 @@
                     <img src="assets/marajo.png" alt="">
                 </div>
                 <div class="agenda-item">
-                    <img src="assets/marajoSabado.png" alt="">
+                    <img src="public/images/marajoSabado.png" alt="">
                 </div>
                 <div class="agenda-item">
-                    <img src="assets/marajoDomingo.png" alt="">
+                    <img src="public/images/marajoDomingo.png" alt="">
                 </div>
                 <div class="agenda-item">
                     <img src="assets/belemAgenda.png" alt="">
                 </div>
                 <div class="agenda-item">
-                    <img src="assets/belemSabado.png" alt="">
+                    <img src="public/images/belemSabado.png" alt="">
                 </div>
             </div>
             <div class="left-column">
                 <div class="agenda-item big-item">
 
-                    <img src="assets/soure.png" alt="">
+                    <img src="public/images/oficinassoure.png" alt="">
 
                     <form class="formAgenda" action="https://formspree.io/f/meojjyel" method="POST">
                         <div class="form-group">
@@ -136,6 +136,13 @@
           </div>
       </section>
 
+      <section class="parcerias">
+        <img class="artImg2" src="public/images/parceria.png" alt="">
+        <div id="card-container2" class="card-container2">
+          <!-- Aqui serão gerados dinamicamente os cards -->
+        </div>
+      </section>
+
     </main>
 
     <footer class="shape-with-text-17">
@@ -164,6 +171,7 @@
     <script src="script.js"></script>
     <script src="formfooter.js"></script>
     <script src="card.js"></script>
+    <script src="parceria.js"></script>
     <!-- Adicione outros scripts que você possa precisar -->
 
 </body>

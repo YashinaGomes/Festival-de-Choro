@@ -11,17 +11,19 @@ main {
   align-items: center;
   height: auto;
   width: 100%;
-  margin-top: 10rem;
-  
+
+
 }
 
 .agenda {
   display: flex;
   justify-content: center;
-  align-items: center; /* Centraliza horizontalmente */
-  width: 80%;
+  align-items: center;
+  /* Centraliza horizontalmente */
+  width: 100%;
   max-width: 1200px;
   gap: 20px;
+  margin-top: 10rem;
 }
 
 .right-column {
@@ -30,13 +32,14 @@ main {
   flex: 2;
   gap: 20px;
   width: 100%;
+  margin-top: 13rem;
+
 }
 
 .left-column {
   background: #000;
   height: 100%;
   flex-direction: column;
- 
   padding: 20px;
   flex: 2;
   width: 100%;
@@ -50,21 +53,22 @@ main {
   box-sizing: border-box;
   padding: 20px;
   text-align: center;
-  margin-bottom: 10rem;
+
 }
 
 .agenda-item img {
-  max-width: 100%;
+  max-width: 90%;
   max-height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+
+
 }
 
 .big-item {
   flex-direction: column;
   flex: 1;
   height: auto;
-  padding-bottom: 41em;
+  padding-bottom: 20rem;
 }
 
 .formAgenda {
@@ -78,7 +82,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
+  margin-left: 3rem;
 }
 
 .formAgenda label {
@@ -95,16 +100,17 @@ main {
 .formAgenda input[type="email"],
 .formAgenda input[type="tel"],
 .formAgenda select {
-  width: 546px;
+  width: 446px;
   height: 65px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
   padding: 2rem;
   font-size: 14px;
+
 }
 
-.formAgenda option{
+.formAgenda option {
   color: #000;
 }
 
@@ -113,8 +119,20 @@ main {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-  margin-right: 2em;
+  margin-right: 2.3em;
 }
+
+.formBtn button {
+  transition: transform 0.3s ease;
+  /* Adiciona uma transição suave para o efeito de zoom */
+}
+
+.formBtn button:hover {
+  transform: scale(0.9);
+  /* Aplica o efeito de zoom */
+  background-color: #f9f9f990;
+}
+
 
 .formAgenda button {
   width: 177px;
@@ -133,52 +151,110 @@ main {
   cursor: pointer;
 }
 
-.artImg{
+.artImg {
   display: flex;
-  margin: 5rem auto;
+  margin: 12rem auto;
 }
 
 .card {
   width: 341px;
   height: 494px;
   background: #000;
-  margin: 10px; /* Espaçamento entre os cards */
-  box-sizing: border-box; /* Inclui borda e padding no cálculo de tamanho */
-  padding: 20px; /* Espaçamento interno dos cards */
-  display: inline-block; /* Exibe os cards lado a lado */
-  vertical-align: top; /* Alinha os cards ao topo */
+  margin: 10px;
+  /* Espaçamento entre os cards */
+  box-sizing: border-box;
+  /* Inclui borda e padding no cálculo de tamanho */
+  padding: 20px;
+  /* Espaçamento interno dos cards */
+  display: inline-block;
+  /* Exibe os cards lado a lado */
+  vertical-align: top;
+  /* Alinha os cards ao topo */
 }
 
-.card:last-child{
+.card:last-child {
   background: none;
 }
 
 .card img {
-  width: 100%; /* Imagem ocupa 100% da largura do card */
-  height: auto; /* Altura automática para manter a proporção */
-  display: block; /* Remove espaços em branco abaixo da imagem */
+  width: 100%;
+  /* Imagem ocupa 100% da largura do card */
+  height: auto;
+  /* Altura automática para manter a proporção */
+  display: block;
+  /* Remove espaços em branco abaixo da imagem */
 }
 
-.card h2, .card p {
-  color: #fff; /* Cor do texto branco */
+.card h2,
+.card p {
+  color: #fff;
+  /* Cor do texto branco */
 }
 
 .card a {
-  color: #fff; /* Cor do link branco */
-  text-decoration: none; /* Remove sublinhado padrão do link */
-  display: block; /* Torna o link um bloco para ocupar o espaço total do card */
-  margin-top: 10px; /* Espaçamento superior do link */
+  color: #fff;
+  /* Cor do link branco */
+  text-decoration: none;
+  /* Remove sublinhado padrão do link */
+  display: block;
+  /* Torna o link um bloco para ocupar o espaço total do card */
+  margin-top: 10px;
+  /* Espaçamento superior do link */
 }
+
+.artImg2 {
+  display: flex;
+  margin: 12rem auto;
+}
+
+.card-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 341px;
+  height: 494px;
+  background: #000;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h2,
+.card p {
+  color: #fff;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
 
 
 @media (max-width: 1200px) {
   .agenda {
-    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    flex-wrap: wrap;
+    /* Permite que os cards quebrem para a próxima linha */
   }
 
   .card {
-    width: calc(33.33% - 20px); /* Calcula a largura para 3 cards por linha com margem de 10px */
-    margin: 10px; /* Espaçamento entre os cards */
+    width: calc(33.33% - 20px);
+    /* Calcula a largura para 3 cards por linha com margem de 10px */
+    margin: 10px;
+    /* Espaçamento entre os cards */
   }
 }
 
@@ -201,7 +277,9 @@ main {
   }
 
   .card {
-    width: 100%; /* Um card por linha em telas menores */
-    margin: 10px 0; /* Espaçamento entre os cards */
+    width: 100%;
+    /* Um card por linha em telas menores */
+    margin: 10px 0;
+    /* Espaçamento entre os cards */
   }
 }

@@ -1,21 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const cardContainer = document.getElementById('card-container');
 
-  let cardsData = [
-    {
+  let cardsData = [{
       imgSrc1: './assets/cards/trio manari.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
       link2: '#',
     },
-    {
-      imgSrc1: './assets/cards/guto.png',
-      imgSrc2: './assets/cards/release.png',
-      imgAlt1: 'Image for Card 2',
-      imgAlt2: 'Image 2 for Card 2',
-      link1: '#',
-      link2: '#',
-    },
+
     {
       imgSrc1: './assets/cards/Borghetti.png',
       imgSrc2: './assets/cards/release.png',
@@ -28,30 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
       link1: '#',
       link2: '#',
     },
-    {
-      imgSrc1: './assets/cards/mestre amélia.png',
-      imgSrc2: './assets/cards/release.png',
-      link1: '#',
-      link2: '#',
-    },
+
     {
       imgSrc1: './assets/cards/charme.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
       link2: '#',
     },
-    {
-      imgSrc1: './assets/cards/tambores.png',
-      imgSrc2: './assets/cards/release.png',
-      link1: '#',
-      link2: '#',
-    },
-    {
-      imgSrc1: './assets/cards/cruzeirinho.png',
-      imgSrc2: './assets/cards/release.png',
-      link1: '#',
-      link2: '#',
-    },
+
     {
       imgSrc1: './assets/cards/adamor.png',
       imgSrc2: './assets/cards/release.png',
@@ -108,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createCard(cardData, isLastCard) {
     const card = document.createElement('div');
     card.className = 'card';
-    
+
     // Aplica background apenas se não for o último card
     if (!isLastCard) {
       card.style.background = '#000'; // Cor de fundo para os cards que não são os últimos
