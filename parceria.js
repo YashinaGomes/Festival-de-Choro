@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link2: '#',
       },
       {
-        imgSrc1: './assets/cards/mestre amélia.png',
+        imgSrc1: './assets/cards/mestreamelia.png',
         imgSrc2: './assets/cards/release.png',
         link1: '#',
         link2: '#',
