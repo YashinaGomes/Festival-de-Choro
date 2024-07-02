@@ -96,14 +96,14 @@
 
                     <img src="public/images/oficinassoure.png" alt="">
 
-                    <form class="formAgenda" action="https://formspree.io/f/meojjyel" method="POST">
+                    <form id="myForm" class="formAgenda" action="https://formspree.io/f/meojjyel" method="POST">
                         <div class="form-group">
                             <label for="name">Nome:</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name"  placeholder="Digite seu nome">
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
                         </div>
                         <div class="form-group">
                             <label for="phone">Telefone/WhatsApp (com DDD):</label>
@@ -143,7 +143,9 @@
                             <button type="submit">Enviar</button>
                         </div>
                     </form>
-                    
+                    <!--Mensagem de sucesso ao submeter o form-->
+                    <div id="successMessage" style="display:none; color:green; margin-top:10px;">Formulário enviado com sucesso!</div>
+
                     
 
 
@@ -211,6 +213,8 @@
     <script src="card.js"></script>
     <script src="parceria.js"></script>
     <script src="carrosselpara.js"></script>
+    <script src="formPara.js"></script>
+
     <!-- Adicione outros scripts que você possa precisar -->
 
 </body>
