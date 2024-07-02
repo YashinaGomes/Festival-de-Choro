@@ -943,11 +943,11 @@ nav {
     .patrocinios {
         width: 739px;
         height: 466px;
-        margin-left: 4rem;
-       
-
+        margin-left: 4rem;  
 
 }
+}
+
 
 /* Media Query para celulares */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -1150,5 +1150,4 @@ nav {
         margin-bottom: 1rem;
     }
 
-}
 }
