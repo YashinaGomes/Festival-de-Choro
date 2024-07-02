@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Choro Jazz Festival</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gill+Sans+Ultra+Bold:wght@400&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gill+Sans+Nova:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Gill+Sans+Nova:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gill+Sans+MT:wght@400;700&display=swap" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="para.css" />
@@ -15,14 +16,22 @@
 
 <body>
     <header>
-        <div class="image-container"><img class="rectangle-icon" src="public/images/capa.png" alt="Imagem do festival"><img class="logo-capa" src="assets/logo-capa.png" alt="Logo choro e jazz"><img class="vetor-capa" src="public/images/vectorcapa.png" alt="vetor com datas dos festivais">
+        <div class="image-container" id="paraCapa">
+            <div class="carousel">
+                <img src="public/images/para.png" alt="Imagem 1">
+                <img src="public/images/capabelem.png" alt="Imagem 2">
+            </div>
             <div class="music-player">
-                <!-- <audio id="audio" src="DÉO RIAN E REGIONAL IMPERIAL - 8ª EDIÇÃO FESTIVAL CHORO JAZZ.mp3"></audio> -->
-                <button id="play" class="control-button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 5V19L19 12L8 5Z" fill="white" />
-                        </svg></button><button id="pause" class="control-button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 19H10V5H6V19ZM14 5V19H18V5H14Z" fill="white" />
-                        </svg></button>
+                <button id="play" class="control-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5V19L19 12L8 5Z" fill="white" />
+                    </svg>
+                </button>
+                <button id="pause" class="control-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 19H10V5H6V19ZM14 5V19H18V5H14Z" fill="white" />
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -30,9 +39,12 @@
         <nav>
             <div class="nav-link">
                 <ul class="festival-nav-link">
-                    <li><a href="index.html"><img class="imagem-festival" src="assets/festival.png" alt="Imagem com o texto O festival"></a></li>
-                    <li><a href="festival.html"><img class="imagem-sambaiba" src="assets/centrocultural.png" alt="Imagem Centro Cultural Samambaia"></a></li>
-                    <li><a href="para.html"><img class="imagem-programacao" src="assets/programacao.png" alt="Imagem Programação"></a></li>
+                    <li><a href="index.html"><img class="imagem-festival" src="assets/festival.png"
+                                alt="Imagem com o texto O festival"></a></li>
+                    <li><a href="festival.html"><img class="imagem-sambaiba" src="assets/centrocultural.png"
+                                alt="Imagem Centro Cultural Samambaia"></a></li>
+                    <li><a href="para.html"><img class="imagem-programacao" src="assets/programacao.png"
+                                alt="Imagem Programação"></a></li>
                 </ul>
                 <figure><img class="triangulo" src="assets/triangula.png" alt=""></figure>
             </div>
@@ -101,13 +113,30 @@
                             <label for="workshop">Escolha as Oficinas para participar:</label>
                             <select id="workshop" name="workshop" required>
                                 <option id="option" value="" disabled selected>Selecione uma oficina...</option>
-                                <option value="piano">Piano</option>
                                 <option value="bateria">Bateria</option>
+                                <option value="carimbo">Carimbó</option>
                                 <option value="composicao">Composição</option>
+                                <option value="musica-universal">Música Universal</option>
+                                <option value="piano">Piano</option>
+                                <option value="sopro">Sopros</option>
                                 <option value="tecnicas">Técnicas para músicos</option>
-                                <option value="banjo">Confecção de banjo</option>
-                                <option value="tambores">Confecção de tambores</option>
+                                <option value="violao">Violão</option>
                             </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="special-needs">Necessidades Especiais:</label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="radio" id="special-needs-yes" name="special-needs" value="sim" required>
+                                <label for="special-needs-yes">Sim</label>
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <input type="radio" id="special-needs-no" name="special-needs" value="não" required>
+                                <label for="special-needs-no">Não</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="special-needs-obs">Quais? (Se aplicável):</label>
+                            <textarea id="special-needs-obs" name="special-needs-obs" rows="3" style="width: 93%; border-radius: 6px;" ></textarea>
                         </div>
                         <div class="formBtn">
                             <button type="reset">Cancelar</button>
@@ -116,7 +145,8 @@
                     </form>
                     
                     
-                    
+
+
                 </div>
 
             </div>
@@ -126,17 +156,17 @@
 
             <img class="artImg" src="assets/artistas.png" alt="">
 
-          <div id="card-container" class="card-container">
-              <!-- Aqui serão gerados dinamicamente os cards -->
-          </div>
-      </section>
+            <div id="card-container" class="card-container">
+                <!-- Aqui serão gerados dinamicamente os cards -->
+            </div>
+        </section>
 
-      <section class="parcerias">
-        <img class="artImg2" src="public/images/parceria.png" alt="">
-        <div id="card-container2" class="card-container2">
-          <!-- Aqui serão gerados dinamicamente os cards -->
-        </div>
-      </section>
+        <section class="parcerias">
+            <img class="artImg2" src="public/images/parceria.png" alt="">
+            <div id="card-container2" class="card-container2">
+                <!-- Aqui serão gerados dinamicamente os cards -->
+            </div>
+        </section>
 
     </main>
 
@@ -151,12 +181,25 @@
             </div>
             <div>
                 <form action="https://formspree.io/f/meojjyel" method="POST">
-                    <div class="inputform"><input type="email" id="email" class="rectangle-1a" placeholder="Seu e-mail" required><button type="submit" class="rectangle-1b"><span class="enviar">enviar</span></button></div>
+                    <div class="inputform"><input type="email" id="email" class="rectangle-1a" placeholder="Seu e-mail"
+                            required><button type="submit" class="rectangle-1b"><span
+                                class="enviar">enviar</span></button></div>
                 </form>
             </div>
         </div>
         <div class="vector-1d"></div>
     </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <img class="patrocinios" src="public/images/regua web.png" alt="Régua de patrocinadores">
     <div class="reservados">
         <h3>© 2024 Choro and Jazz. All rights reserved.</h3>
@@ -167,6 +210,7 @@
     <script src="formfooter.js"></script>
     <script src="card.js"></script>
     <script src="parceria.js"></script>
+    <script src="carrosselpara.js"></script>
     <!-- Adicione outros scripts que você possa precisar -->
 
 </body>
