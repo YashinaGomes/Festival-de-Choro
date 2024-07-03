@@ -2,18 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardContainers = document.querySelectorAll('.card-container2');
 
   let cardsData = [
-    // {
-    //   imgSrc1: './assets/cards/cruzeirinho.png',
-    //   imgSrc2: './assets/cards/release.png',
-    //   link1: '#',
-    //   link2: '/assets/pdf/Cruzeirinho.ppt',
-    // },
-    // {
-    //   imgSrc1: './assets/cards/tambores.png',
-    //   imgSrc2: './assets/cards/release.png',
-    //   link1: '#',
-    //   link2: '/assets/pdf/tambores.pdf',
-    // },
+   
    
   ];
 
