@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   const cardContainer = document.getElementById('card-container');
 
-  let cardsData = [{
-      imgSrc1: './assets/cards/trio manari.png',
+  let cardsData = [
+    {
+      imgSrc1: './assets/cards/trio_manari.png', // Renomeado para evitar espaços
       imgSrc2: './assets/cards/release.png',
-      link1: '#',
+link1: './assets/pdf/Trio_Manari.pdf', // Renomeado para evitar espaços
       link2: '#',
     },
 
