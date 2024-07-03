@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link2: '#',
     },
     {
-      imgSrc1: './assets/cards/Arraial da Pavulagem.png',
+      imgSrc1: './assets/cards/Arraial do Pavulagem.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
       link2: '#',
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link2: '#',
     },
     {
-      imgSrc1: './assets/cards/hermento.png',
+      imgSrc1: './assets/cards/hermeto.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
       link2: '#',

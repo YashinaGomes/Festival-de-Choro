@@ -20,7 +20,7 @@
             <img class="logo-capa" src="assets/logo-capa.png" alt="Logo choro e jazz">
             <img class="vetor-capa" src="public/images/vectorcapa.png" alt="vetor com datas dos festivais">
             <div class="music-player">
-                <audio id="audio" src="DÉO RIAN E REGIONAL IMPERIAL - 8ª EDIÇÃO FESTIVAL CHORO JAZZ.mp3"></audio>
+                <!-- <audio id="audio" src="DÉO RIAN E REGIONAL IMPERIAL - 8ª EDIÇÃO FESTIVAL CHORO JAZZ.mp3"></audio> -->
                 <button id="play" class="control-button">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 5V19L19 12L8 5Z" fill="white" />
@@ -92,7 +92,8 @@
                 <div class="vetorfest">
                     <a href="" target="_blank">
                         <img src="assets/Vector.png" alt="">
-                        <span>Conheça</span>
+                        
+                        <a href="festival.html"><span>Conheça</span></a>
                     </a>
                 </div>
 
@@ -117,7 +118,8 @@
                     <div class="vetor">
                         <a href="" target="_blank">
                             <img src="assets/vectorbranco.png" alt="">
-                            <span id="text">Conheça</span>
+                            
+                            <a href="sambaiba.html"><span id="text">Conheça</span></a>
                         </a>
                     </div>
                 </div>
@@ -182,25 +184,24 @@
     </main>
     <footer class="shape-with-text-17">
         <div class="flex-row-b-18">
-            <div class="logo-footer">
-                <img class="logoFooter" src="assets/logo-footer-1.png" alt="">
-            </div>
+            <div class="logo-footer"><img class="logoFooter" src="assets/logo-footer-1.png" alt=""></div>
             <div>
                 <div class="newsletter-container">
                     <h2 class="newsletter">Newsletter</h2>
                     <p class="inscreva">Inscreva-se para receber<br />novidades em seu e-mail.</p>
                 </div>
             </div>
-            <div style="display: flex; flex-direction: column; padding-top: 0.5em;" >
-            <form id="newsletterForm" action="https://formspree.io/f/mzzpbrlb" method="POST">
-                <div class="inputform">
-                    <input type="email" id="email" name="email" class="rectangle-1a" placeholder="Seu e-mail" required>
-                    <button type="submit" class="rectangle-1b">
-                        <span class="enviar">enviar</span>
-                    </button>
-                </div>
-            </form>
-            <div id="successMessage2" style="display:none; color:green; margin-top:10px;">Formulário enviado com sucesso!</div>
+            <div style="display: flex; flex-direction: column; padding-top: 0.5em;">
+                <form id="newsletterForm" action="https://formspree.io/f/mzzpbrlb" method="POST">
+                    <div class="inputform">
+                        <input type="email" id="email" name="email" class="rectangle-1a" placeholder="Seu e-mail" required>
+                        <button type="submit" class="rectangle-1b">
+                            <span class="enviar">enviar</span>
+                        </button>
+                    </div>
+                </form>
+                <div id="successMessage2" style="display:none; color:green; margin-top:10px;">Formulário enviado com sucesso!</div>
+            </div>
         </div>
         <div class="vector-1d"></div>
     </footer>
