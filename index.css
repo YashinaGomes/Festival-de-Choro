@@ -1171,4 +1171,37 @@ nav {
         margin-bottom: 1rem;
     }
 
+   
+
+    .flex-row-b-18{
+        flex-direction: column;
+    }
+
+    .newsletter-container{
+        flex-direction: column !important;
+        justify-content: center;
+        margin-left: 0;
+
+}
+
+.inscreva{
+    font-size: 18px;
+}
+
+.newsletter-form {
+    width: 100%;
+   
+}
+
+.newsletter-form input{
+    width: 200px;
+    
+}
+
+.enviar{
+width: 60px;
+font-size: 16px;
+  
+}
+
 }
