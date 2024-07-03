@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let cardsData = [
     {
-      imgSrc1: './assets/cards/trio_manari.png', // Renomeado para evitar espaços
+      imgSrc1: './assets/cards/triomanari.png', // Renomeado para evitar espaços
       imgSrc2: './assets/cards/release.png',
-      link1: './assets/pdf/Trio_Manari.pdf', // Renomeado para evitar espaços
+link1: './assets/pdf/Trio_Manari.pdf', // Renomeado para evitar espaços
       link2: '#',
     },
 
@@ -13,57 +13,57 @@ document.addEventListener('DOMContentLoaded', () => {
       imgSrc1: './assets/cards/Borghetti.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
-      link2: '#',
+      link2: './assets/pdf/RENATO BORGHETTI.pdf',
     },
     {
       imgSrc1: './assets/cards/trio lobita.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
-      link2: '#',
+      link2: './assets/pdf/Lobita Choro.pdf',
     },
 
     {
       imgSrc1: './assets/cards/charme.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
-      link2: '#',
+      link2: './assets/pdf/O Charme do Choro.pdf',
     },
 
     {
       imgSrc1: './assets/cards/adamor.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
-      link2: '#',
+      link2: './assets/pdf/Adamor.pdf',
     },
     {
       imgSrc1: './assets/cards/nazare.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
-      link2: '#',
+      link2: './assets/pdf/NAZARÉ PEREIRA.pdf',
     },
     {
       imgSrc1: './assets/cards/Arraial do Pavulagem.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
-      link2: '#',
+      link2: './assets/pdf/Arraial do Pavulagem.pdf',
     },
     {
       imgSrc1: './assets/cards/orquestra.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
-      link2: '#',
+      link2: './assets/pdf/ORQUESTRA AEROFÔNICA.pdf',
     },
     {
       imgSrc1: './assets/cards/hermeto.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
-      link2: '#',
+      link2: './assets/pdf/Hermeto Pascoal.pdf',
     },
     {
       imgSrc1: './assets/cards/dona onete.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
-      link2: '#',
+      link2: './assets/pdf/Dona Onete.pdf',
     },
     {
       imgSrc1: './assets/cards/z.png',
@@ -91,18 +91,15 @@ document.addEventListener('DOMContentLoaded', () => {
       card.style.background = '#000'; // Cor de fundo para os cards que não são os últimos
     }
 
-    const imgLink1 = document.createElement('a');
-    imgLink1.href = cardData.link1;
-
     const img1 = document.createElement('img');
     img1.src = cardData.imgSrc1;
     img1.alt = cardData.imgAlt1 || 'Image 1';
-    imgLink1.appendChild(img1);
-    card.appendChild(imgLink1);
+    card.appendChild(img1);
 
     if (!isLastCard) {
       const imgLink2 = document.createElement('a');
       imgLink2.href = cardData.link2;
+      imgLink2.target = '_blank'; // Adiciona target="_blank" aqui
 
       const img2 = document.createElement('img');
       img2.src = cardData.imgSrc2;
