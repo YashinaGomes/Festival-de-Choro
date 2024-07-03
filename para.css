@@ -398,12 +398,44 @@ select {
   .formAgenda {
     width: 100%;
     height: auto;
+    padding: 0;
+    margin: 0;
   }
-  
-  .formAgenda input {
-    width: 80%;
 
+.agendaimg{
+  display: flex;
+  justify-content: left;
+
+  width: 220px;;
+  
+}
+
+.formAgenda label{
+  margin-left: -3rem;
+}
+  
+  .formAgenda input, .formAgenda select {
+
+    width: 270px !important;
+    margin-left: -3rem;
+   
   }
+
+  .radio-group{
+    display: flex;
+    margin-left: -8rem;
+  }
+ 
+  #special-needs-obs{
+    display: flex;
+    margin-left: -3rem;
+    width: 270px !important;
+  }
+
+  .artImg, .artImg2{
+    width: 90%;
+  }
+
 
   .card {
     width: 100%;
