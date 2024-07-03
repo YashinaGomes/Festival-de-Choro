@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link2: '/assets/pdf/Amelia.pdf',
           },
           {
-            imgSrc1: './assets/cards/MestreDamasceno.png',
+            imgSrc1: './assets/cards/mestredamasceno.png',
             imgSrc2: './assets/cards/release.png',
             imgAlt1: 'Image for Card 2',
             imgAlt2: 'Image 2 for Card 2',
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             imgSrc1: './assets/cards/mestrediquinho.png',
             imgSrc2: './assets/cards/release.png',
             link1: '#',
-            link2: '/assets/pdf/Amelia.pdf',
+            link2: '#',
           },
           
     ];
