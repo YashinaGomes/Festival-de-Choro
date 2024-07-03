@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const cardContainer = document.getElementById('card-container');
 
-  let cardsData = [
-    {
+  let cardsData = [{
       imgSrc1: './assets/cards/triomanari.png', // Renomeado para evitar espaços
       imgSrc2: './assets/cards/release.png',
-link1: './assets/pdf/Trio_Manari.pdf', // Renomeado para evitar espaços
+      link1: './assets/pdf/Trio_Manari.pdf', // Renomeado para evitar espaços
       link2: '#',
     },
 
@@ -36,12 +35,6 @@ link1: './assets/pdf/Trio_Manari.pdf', // Renomeado para evitar espaços
       link2: './assets/pdf/Adamor.pdf',
     },
     {
-      imgSrc1: './assets/cards/nazare.png',
-      imgSrc2: './assets/cards/release.png',
-      link1: '#',
-      link2: './assets/pdf/NAZARÉ PEREIRA.pdf',
-    },
-    {
       imgSrc1: './assets/cards/Arraial do Pavulagem.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
@@ -58,12 +51,6 @@ link1: './assets/pdf/Trio_Manari.pdf', // Renomeado para evitar espaços
       imgSrc2: './assets/cards/release.png',
       link1: '#',
       link2: './assets/pdf/Hermeto Pascoal.pdf',
-    },
-    {
-      imgSrc1: './assets/cards/dona onete.png',
-      imgSrc2: './assets/cards/release.png',
-      link1: '#',
-      link2: './assets/pdf/Dona Onete.pdf',
     },
     {
       imgSrc1: './assets/cards/z.png',
