@@ -31,3 +31,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+//Botão do topo
+
+window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 150) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // Função para rolar suavemente para o topo da página quando o botão é clicado
+        function topFunction() {
+            document.body.scrollTop = 0; // Para navegadores da web
+            document.documentElement.scrollTop = 0; // Para IE e Edge
+        }
