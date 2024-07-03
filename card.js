@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       imgSrc1: './assets/cards/triomanari.png', // Renomeado para evitar espaços
       imgSrc2: './assets/cards/release.png',
-      link1: '', 
-      link2: './assets/pdf/Trio_Manari.pdf',
+link1: './assets/pdf/Trio_Manari.pdf', // Renomeado para evitar espaços
+      link2: '#',
     },
 
     {
