@@ -415,7 +415,7 @@ select {
 }
   
   .formAgenda input, .formAgenda select {
-    background-color: aqua;
+
     width: 270px !important;
     margin-left: -3rem;
    
@@ -430,6 +430,10 @@ select {
     display: flex;
     margin-left: -3rem;
     width: 270px !important;
+  }
+
+  .artImg, .artImg2{
+    width: 90%;
   }
 
 
