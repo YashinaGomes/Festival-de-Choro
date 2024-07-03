@@ -382,6 +382,10 @@ select {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+body{
+  width: 100%;
+}
+
   .agenda {
     flex-direction: column;
     align-items: center;
@@ -436,11 +440,16 @@ select {
     width: 90%;
   }
 
-
+  .card-, .card-container3, .card-container3, .card-container4{
+    padding-left: 1rem;
+    
+  }
   .card {
-    width: 100%;
+    width: 90%;
     /* Um card por linha em telas menores */
-    margin: 10px 0;
+    margin: 20px 
+    auto;
     /* Espaçamento entre os cards */
+    
   }
 }
