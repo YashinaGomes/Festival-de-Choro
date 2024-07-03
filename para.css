@@ -405,19 +405,32 @@ select {
 .agendaimg{
   display: flex;
   justify-content: left;
- 
-  margin-left: -17rem;
+
   width: 220px;;
   
 }
-  
-  .formAgenda input {
-    background-color: aqua;
-    width: 50px;
-    height: 30px;
 
+.formAgenda label{
+  margin-left: -3rem;
+}
+  
+  .formAgenda input, .formAgenda select {
+    background-color: aqua;
+    width: 270px !important;
+    margin-left: -3rem;
+   
   }
 
+  .radio-group{
+    display: flex;
+    margin-left: -8rem;
+  }
+ 
+  #special-needs-obs{
+    display: flex;
+    margin-left: -3rem;
+    width: 270px !important;
+  }
 
 
   .card {
