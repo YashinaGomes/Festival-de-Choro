@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         imgSrc1: './assets/cards/nazare.png',
         imgSrc2: './assets/cards/release.png',
         link1: '#',
-        link2: './assets/pdf/NAZARÉ PEREIRA.pdf',
+        link2: './assets/pdf/nazare.pdf',
       },
       {
         imgSrc1: './assets/cards/dona onete.png',
@@ -28,7 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function createCard(cardData, isLastCard) {
       const card = document.createElement('div');
       card.className = 'card';
-      card.style.background = '#000'; // Aplicando fundo preto em todos os cards
+  
+      // Aplica background apenas se não for o último card
+      if (!isLastCard) {
+        card.style.background = '#000'; // Cor de fundo para os cards que não são os últimos
+      }
   
       const img1 = document.createElement('img');
       img1.src = cardData.imgSrc1;
