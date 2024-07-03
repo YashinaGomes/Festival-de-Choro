@@ -135,8 +135,7 @@
                         </div>
                         <div class="form-group">
                             <label for="special-needs-obs">Quais? (Se aplicável):</label>
-                            <textarea id="special-needs-obs" name="special-needs-obs" rows="3"
-                                style="width: 93%; border-radius: 6px;"></textarea>
+                            <textarea id="special-needs-obs" name="special-needs-obs" rows="3" style="width: 93%; border-radius: 6px; padding: 1rem;" ></textarea>
                         </div>
                         <div class="formBtn">
                             <button type="reset">Cancelar</button>
@@ -182,12 +181,16 @@
                     <p class="inscreva">Inscreva-se para receber<br />novidades em seu e-mail.</p>
                 </div>
             </div>
-            <div>
-                <form action="https://formspree.io/f/meojjyel" method="POST">
-                    <div class="inputform"><input type="email" id="email" class="rectangle-1a" placeholder="Seu e-mail"
-                            required><button type="submit" class="rectangle-1b"><span
-                                class="enviar">enviar</span></button></div>
+            <div style="display: flex; flex-direction: column; padding-top: 0.5em;">
+                <form id="newsletterForm" action="https://formspree.io/f/mzzpbrlb" method="POST">
+                    <div class="inputform">
+                        <input type="email" id="email" name="email" class="rectangle-1a" placeholder="Seu e-mail" required>
+                        <button type="submit" class="rectangle-1b">
+                            <span class="enviar">enviar</span>
+                        </button>
+                    </div>
                 </form>
+                <div id="successMessage2" style="display:none; color:green; margin-top:10px;">Formulário enviado com sucesso!</div>
             </div>
         </div>
         <div class="vector-1d"></div>
