@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
             link1: '#',
             link2: '/assets/pdf/Amelia.pdf',
           },
-          {
-            imgSrc1: './assets/cards/mestredamasceno.png',
-            imgSrc2: './assets/cards/release.png',
-            imgAlt1: 'Image for Card 2',
-            imgAlt2: 'Image 2 for Card 2',
-            link1: '#',
-            link2: '/assets/pdf/MestreDamasceno.pdf',
-          },
+          // {
+          //   imgSrc1: './assets/cards/mestredamasceno.png',
+          //   imgSrc2: './assets/cards/release.png',
+          //   imgAlt1: 'Image for Card 2',
+          //   imgAlt2: 'Image 2 for Card 2',
+          //   link1: '#',
+          //   link2: '/assets/pdf/MestreDamasceno.pdf',
+          // },
           {
             imgSrc1: './assets/cards/mestrediquinho.png',
             imgSrc2: './assets/cards/release.png',
