@@ -39,10 +39,14 @@
         <nav>
             <div class="nav-link">
                 <ul class="festival-nav-link">
-                    <li><a href="index.html"><img class="imagem-festival" src="public/images/inicio.png" alt="Imagem com o texto O festival"></a></li>
-                    <li><a href="festival.html"><img class="imagem-festival" src="assets/festival.png" alt="Imagem com o texto O festival"></a></li>
-                    <li><a href="sambaiba.html"><img class="imagem-sambaiba" src="assets/centrocultural.png" alt="Imagem Centro Cultural Samambaia"></a></li>
-                    <li><a href="para.html"><img class="imagem-programacao" src="assets/programacao.png" alt="Imagem Programação"></a></li>
+                    <li><a href="index.html"><img class="imagem-festival" src="public/images/inicio.png"
+                                alt="Imagem com o texto O festival"></a></li>
+                    <li><a href="festival.html"><img class="imagem-festival" src="assets/festival.png"
+                                alt="Imagem com o texto O festival"></a></li>
+                    <li><a href="sambaiba.html"><img class="imagem-sambaiba" src="assets/centrocultural.png"
+                                alt="Imagem Centro Cultural Samambaia"></a></li>
+                    <li><a href="para.html"><img class="imagem-programacao" src="assets/programacao.png"
+                                alt="Imagem Programação"></a></li>
                 </ul>
                 <figure><img class="triangulo" src="assets/triangula.png" alt=""></figure>
             </div>
@@ -135,7 +139,8 @@
                         </div>
                         <div class="form-group">
                             <label for="special-needs-obs">Quais? (Se aplicável):</label>
-                            <textarea id="special-needs-obs" name="special-needs-obs" rows="3" style="width: 93%; border-radius: 6px; padding: 1rem;" ></textarea>
+                            <textarea id="special-needs-obs" name="special-needs-obs" rows="3"
+                                style="width: 93%; border-radius: 6px; padding: 1rem;"></textarea>
                         </div>
                         <div class="formBtn">
                             <button type="reset">Cancelar</button>
@@ -163,12 +168,38 @@
             </div>
         </section>
 
-        <section class="parcerias">
-            <img class="artImg2" src="public/images/parceria.png" alt="">
-            <div id="card-container2" class="card-container2">
+        <section class="homenageados-para">
+            <img class="artImg2" src="public/images/homenageados-para.png" alt="">
+            <div id="card-container3" class="card-container3">
                 <!-- Aqui serão gerados dinamicamente os cards -->
             </div>
         </section>
+
+
+        <!-- <section class="parcerias">
+            <img class="artImg2" src="public/images/parceria.png" alt="">
+            <div id="card-container2" class="card-container2">
+                
+            </div>
+        </section> -->
+
+        <section class="homenageados-rio">
+            <img class="artImg2" src="public/images/homenageados-rio.png" alt="">
+            <div id="card-container4" class="card-container4">
+                <!-- Aqui serão gerados dinamicamente os cards -->
+            </div>
+        </section>
+
+        <section class="container">
+
+            <img src="public/images/maisinformacoes.png" alt="Imagem Descritiva" class="image">
+
+            <a class="navLink" href="assets/pdf/Release-final.pdf" download="release.pdf">
+                <img src="public/images/realeseinfo.png" alt="imagem com nome release">
+            </a>
+
+        </section>
+
 
     </main>
 
@@ -184,22 +215,24 @@
             <div style="display: flex; flex-direction: column; padding-top: 0.5em;">
                 <form id="newsletterForm" action="https://formspree.io/f/mzzpbrlb" method="POST">
                     <div class="inputform">
-                        <input type="email" id="email" name="email" class="rectangle-1a" placeholder="Seu e-mail" required>
+                        <input type="email" id="email" name="email" class="rectangle-1a" placeholder="Seu e-mail"
+                            required>
                         <button type="submit" class="rectangle-1b">
                             <span class="enviar">enviar</span>
                         </button>
                     </div>
                 </form>
-                <div id="successMessage2" style="display:none; color:green; margin-top:10px;">Formulário enviado com sucesso!</div>
+                <div id="successMessage2" style="display:none; color:green; margin-top:10px;">Formulário enviado com
+                    sucesso!</div>
             </div>
         </div>
         <div class="vector-1d"></div>
     </footer>
-     <!--Botão subir ao topo-->
+    <!--Botão subir ao topo-->
 
-     <!-- <button class="btn-topo" onclick="topFunction()" id="myBtn">Subir</button> -->
+    <!-- <button class="btn-topo" onclick="topFunction()" id="myBtn">Subir</button> -->
 
-     <!---->
+    <!---->
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -224,6 +257,8 @@
     <script src="parceria.js"></script>
     <script src="carrosselpara.js"></script>
     <script src="formPara.js"></script>
+    <script src="homenageadosPara.js"></script>
+    <script src="homenageados-rio.js"></script>
 
     <!-- Adicione outros scripts que você possa precisar -->
 

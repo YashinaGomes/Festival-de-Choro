@@ -185,7 +185,7 @@ select {
 
 .artImg {
   display: flex;
-  margin: 12rem auto;
+  margin: 4.1rem auto;
 }
 
 .card {
@@ -236,10 +236,26 @@ select {
 
 .artImg2 {
   display: flex;
-  margin: 12rem auto;
+  margin: 4rem auto;
 }
 
 .card-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+
+.card-container3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+
+.card-container4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -287,6 +303,32 @@ select {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  text-align: left; /* Ajusta o texto para a esquerda */
+  padding: 90px;
+  box-sizing: border-box;
+}
+
+
+
+.container a {
+  align-self: flex-start; /* Alinha o link à esquerda */
+  margin-top: 3rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  flex-shrink: 2;
+  flex-grow: 3;
+  
 }
 
 
