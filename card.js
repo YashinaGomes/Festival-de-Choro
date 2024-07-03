@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let cardsData = [{
       imgSrc1: './assets/cards/triomanari.png', // Renomeado para evitar espaços
       imgSrc2: './assets/cards/release.png',
-      link1: './assets/pdf/Trio_Manari.pdf', // Renomeado para evitar espaços
-      link2: '#',
+      link1: '#', // Renomeado para evitar espaços
+      link2: './assets/pdf/Trio_Manari.pdf',
     },
 
     {
