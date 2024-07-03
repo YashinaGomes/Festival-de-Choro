@@ -298,10 +298,43 @@ select {
   }
 
   .card {
-    width: calc(33.33% - 20px);
+    /* width: calc(33.33% - 20px); */
     /* Calcula a largura para 3 cards por linha com margem de 10px */
-    margin: 10px;
+    /* margin: 10px; */
     /* Espaçamento entre os cards */
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #000; /* Cor de fundo para os cards que não são os últimos */
+  }
+
+  .card img {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .card a img {
+    width: 50px;
+    padding-left: 0;
   }
 
 }
@@ -310,6 +343,7 @@ select {
   .agenda {
     flex-direction: column;
     align-items: center;
+    padding-top: 5rem
   }
 
   .right-column,
