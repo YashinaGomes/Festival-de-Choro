@@ -9,6 +9,8 @@ html,
 body {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Estilos gerais */
@@ -976,12 +978,15 @@ nav {
     .logo-capa {
         border-radius: 6px;
         background-color: #000;
-        width: 397px;
+        width: 377px;
         height: 143px;
         position: absolute;
         top: 3px;
-        left: 1px;
+        left: 0;
     }
+
+
+
 
     .vetor-capa {
         display: none;
