@@ -960,20 +960,17 @@ nav {
     }
 
 
-    .patrocinios {
+    /* .patrocinios {
         width: 739px;
         height: 466px;
         margin-left: 4rem;  
 
-}
+} */
 }
 
 
 /* Media Query para celulares */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-
-   
-
    
     .logo-capa {
         border-radius: 6px;
@@ -984,9 +981,6 @@ nav {
         top: 3px;
         left: 0;
     }
-
-
-
 
     .vetor-capa {
         display: none;
