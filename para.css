@@ -43,10 +43,10 @@ main {
   justify-content: center;
   align-items: center;
   /* Centraliza horizontalmente */
-  width: 100%;
-  max-width: 1200px;
+  width: 75%;
+  height: 2600px;
   gap: 20px;
-  margin-top: 10rem;
+  /* margin-top: -6rem; */
 }
 
 .right-column {
@@ -66,6 +66,7 @@ main {
   padding: 20px;
   flex: 2;
   width: 100%;
+  margin-bottom: -29rem;
 }
 
 .agenda-item {
@@ -76,15 +77,12 @@ main {
   box-sizing: border-box;
   padding: 20px;
   text-align: center;
-
 }
 
 .agenda-item img {
   max-width: 90%;
   max-height: 100%;
   object-fit: cover;
-
-
 }
 
 .big-item {
@@ -122,21 +120,32 @@ main {
 .formAgenda input[type="text"],
 .formAgenda input[type="email"],
 .formAgenda input[type="tel"],
-.formAgenda select {
+.formAgenda input[type="number"],
+.formAgenda select,
+.formAgenda textarea {
   width: 446px;
-  height: 65px;
+  height: 38px; /* Ajuste a altura conforme necessário */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 0.5rem; /* Ajuste o padding conforme necessário */
   font-size: 14px;
+}
 
+.formAgenda textarea {
+  height: auto;
+  resize: vertical;
+}
+
+
+.formAgenda textarea {
+  height: auto;
+  resize: vertical;
 }
 
 .formAgenda option {
   color: #000;
 }
-
 
 .formBtn {
   display: flex;
@@ -155,7 +164,6 @@ main {
   /* Aplica o efeito de zoom */
   background-color: #f9f9f990;
 }
-
 
 .formAgenda button {
   width: 177px;
@@ -180,6 +188,10 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.artistas {
+  padding: 19rem;
 }
 
 

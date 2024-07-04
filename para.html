@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Choro Jazz Festival</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gill+Sans+Ultra+Bold:wght@400&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gill+Sans+Nova:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Gill+Sans+Nova:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gill+Sans+MT:wght@400;700&display=swap" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="para.css" />
@@ -39,10 +40,14 @@
         <nav>
             <div class="nav-link">
                 <ul class="festival-nav-link">
-                    <li><a href="index.html"><img class="imagem-festival" src="public/images/inicio.png" alt="Imagem com o texto O festival"></a></li>
-                    <li><a href="festival.html"><img class="imagem-festival" src="assets/festival.png" alt="Imagem com o texto O festival"></a></li>
-                    <li><a href="sambaiba.html"><img class="imagem-sambaiba" src="assets/centrocultural.png" alt="Imagem Centro Cultural Samambaia"></a></li>
-                    <li><a href="para.html"><img class="imagem-programacao" src="assets/programacao.png" alt="Imagem Programação"></a></li>
+                    <li><a href="index.html"><img class="imagem-festival" src="public/images/inicio.png"
+                                alt="Imagem com o texto O festival"></a></li>
+                    <li><a href="festival.html"><img class="imagem-festival" src="assets/festival.png"
+                                alt="Imagem com o texto O festival"></a></li>
+                    <li><a href="sambaiba.html"><img class="imagem-sambaiba" src="assets/centrocultural.png"
+                                alt="Imagem Centro Cultural Samambaia"></a></li>
+                    <li><a href="para.html"><img class="imagem-programacao" src="assets/programacao.png"
+                                alt="Imagem Programação"></a></li>
                 </ul>
                 <figure><img class="triangulo" src="assets/triangula.png" alt=""></figure>
             </div>
@@ -105,7 +110,55 @@
                         </div>
                         <div class="form-group">
                             <label for="phone">Telefone/WhatsApp (com DDD):</label>
-                            <input type="tel" id="phone" name="phone" pattern="[0-9]{2}[0-9]{4,5}[0-9]{4}" placeholder="99 99999-9999" required>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{2}[0-9]{4,5}[0-9]{4}"
+                                placeholder="99 99999-9999" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cpf">CPF:</label>
+                            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gênero:</label>
+                            <input type="text" id="gender" name="gender" placeholder="Digite seu gênero" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="racial-declaration">Autodeclaração Racial:</label>
+                            <input type="text" id="racial-declaration" name="racial-declaration"
+                                placeholder="Digite sua autodeclaração racial" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="education">Escolaridade:</label>
+                            <select id="education" name="education" required>
+                                <option value="" disabled selected>Selecione sua escolaridade...</option>
+                                <option value="fundamental-incompleto">Fundamental incompleto</option>
+                                <option value="fundamental-completo">Fundamental completo</option>
+                                <option value="medio-incompleto">Médio incompleto</option>
+                                <option value="medio-completo">Médio completo</option>
+                                <option value="superior">Ensino Superior</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="musical-level">Nível Musical:</label>
+                            <select id="musical-level" name="musical-level" required>
+                                <option value="" disabled selected>Selecione seu nível musical...</option>
+                                <option value="iniciante">Iniciante</option>
+                                <option value="intermediario">Intermediário</option>
+                                <option value="musico-amador">Músico amador</option>
+                                <option value="musico-profissional">Músico profissional</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Idade:</label>
+                            <select id="age" name="age" required>
+                                <option value="" disabled selected>Selecione sua faixa etária...</option>
+                                <option value="14-21">Entre 14 a 21</option>
+                                <option value="22-28">Entre 22 a 28</option>
+                                <option value="29-35">Entre 29 a 35</option>
+                                <option value="36-42">Entre 36 a 42</option>
+                                <option value="43-49">Entre 43 a 49</option>
+                                <option value="50-56">Entre 50 a 56</option>
+                                <option value="57-acima">Acima de 57</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="workshop">Escolha as Oficinas para participar:</label>
@@ -124,27 +177,33 @@
                         <div class="form-group">
                             <label for="special-needs">Necessidades Especiais:</label>
                             <div class="radio-group" style="display: flex; align-items: center;">
-                                <input class="radio" type="radio" id="special-needs-yes" name="special-needs" value="sim" required>
+                                <input class="radio" type="radio" id="special-needs-yes" name="special-needs"
+                                    value="sim" required>
                                 <label for="special-needs-yes">Sim</label>
                             </div>
                             <div class="radio-group" style="display: flex; align-items: center;">
-                                <input class="radio" type="radio" id="special-needs-no" name="special-needs" value="não" required>
+                                <input class="radio" type="radio" id="special-needs-no" name="special-needs" value="não"
+                                    required>
                                 <label for="special-needs-no">Não</label>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <<div class="form-group">
                             <label for="special-needs-obs">Quais? (Se aplicável):</label>
-                            <textarea id="special-needs-obs" name="special-needs-obs" rows="3" style="width: 93%; border-radius: 6px; padding: 1rem;"></textarea>
-                        </div>
-                        <div class="formBtn">
-                            <button type="reset">Cancelar</button>
-                            <button type="submit">Enviar</button>
-                        </div>
-                    </form>
-                    <!--Mensagem de sucesso ao submeter o form-->
-                    <div id="successMessage" style="display:none; color:green; margin-top:10px;">Formulário enviado com
-                        sucesso!</div>
+                            <textarea id="special-needs-obs" name="special-needs-obs" rows="3"
+                                placeholder="Digite aqui..."
+                                style="width: 100%; border-radius: 6px; padding: 1rem;"></textarea>
                 </div>
+                <div class="formBtn">
+                    <button type="reset">Cancelar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+                </form>
+
+
+                <!--Mensagem de sucesso ao submeter o form-->
+                <div id="successMessage" style="display:none; color:green; margin-top:10px;">Formulário enviado com
+                    sucesso!</div>
+            </div>
 
             </div>
         </section>
@@ -193,7 +252,7 @@
 
     </main>
 
- 
+
 
     <footer class="shape-with-text-17">
         <div class="flex-row-b-18">
@@ -207,7 +266,8 @@
             <div class="newsletter-form" style="display: flex; flex-direction: column; padding-top: 0.5em;">
                 <form id="newsletterForm" action="https://formspree.io/f/mzzpbrlb" method="POST">
                     <div class="inputform">
-                        <input type="email" id="email" name="email" class="rectangle-1a" placeholder="Seu e-mail" required>
+                        <input type="email" id="email" name="email" class="rectangle-1a" placeholder="Seu e-mail"
+                            required>
                         <button type="submit" class="rectangle-1b">
                             <span class="enviar">enviar</span>
                         </button>
@@ -236,7 +296,7 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
     <!-- <img class="patrocinios" src="public/images/regua web.png" alt="Régua de patrocinadores"> -->
-     
+
     <div class="reservados">
         <h3>© 2024 Choro and Jazz. All rights reserved.</h3>
     </div>
