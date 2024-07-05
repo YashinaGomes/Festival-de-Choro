@@ -349,7 +349,6 @@ select {
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
 
-  
   .triangulo {
     margin-right: -3rem;
     margin-left: -0.1rem;
@@ -387,6 +386,20 @@ nav {
 .meses-navigation li a {
     font-size: 24px;
 }
+
+.left-column {
+ 
+  margin-left: -39rem;
+}
+
+.artImg {
+  display: flex;
+  margin: 8.1rem auto;
+}
+.artImg, .artImg2{
+  width: 95%;
+  margin-top: 10rem;
+} 
 
 }
 
