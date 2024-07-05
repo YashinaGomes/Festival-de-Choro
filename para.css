@@ -43,8 +43,8 @@ main {
   justify-content: center;
   align-items: center;
   /* Centraliza horizontalmente */
-  width: 75%;
-  height: 2560px;
+  width: 100%;
+  height: 3190px;
   gap: 20px;
   /* margin-top: -6rem; */
 }
@@ -78,6 +78,11 @@ main {
   padding: 20px;
   text-align: center;
 }
+.agenda img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
 
 .agenda-item img {
   max-width: 100%;
@@ -104,7 +109,7 @@ main {
   flex-direction: column;
   justify-content: left;
   padding-bottom: 1rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .formAgenda label {
@@ -123,8 +128,8 @@ main {
 .formAgenda input[type="number"],
 .formAgenda select,
 .formAgenda textarea {
-  width: 446px;
-  height: 38px; /* Ajuste a altura conforme necessário */
+  width: 466px;
+  height: 48px; /* Ajuste a altura conforme necessário */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
@@ -149,9 +154,8 @@ main {
 
 .formBtn {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 10px;
-  margin-right: 2.3em;
 }
 
 .formBtn button {
@@ -166,8 +170,8 @@ main {
 }
 
 .formAgenda button {
-  width: 177px;
-  height: 51px;
+  width: 147px;
+  height: 41px;
   padding: 10px;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -179,8 +183,9 @@ main {
   letter-spacing: -0.363px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMCIgdmlld0x...'), auto;
 }
+
 
 select {
   width: 100%;
@@ -191,7 +196,7 @@ select {
 }
 
 .artistas {
-  padding: 13rem;
+  padding: 11rem;
 }
 
 
@@ -341,336 +346,5 @@ select {
   flex-grow: 3;
   
 }
-
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-  .vetor-capa {
-    display: none;
-}
-
-.music-player {
-    display: flex;
-    align-items: center;
-    margin-left: 43rem;
-}
-
-.control-button {
-    padding: 6px;
-    font-size: 6px;
-    color: #fff;
-    background-color: #000000;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.control-button:hover {
-    background-color: #00000068;
-}
-
-.control-button svg {
-    fill: #fff;
-}
-
-
-.triangulo {
-    margin-right: -3rem;
-    margin-left: -0.1rem;
-}
-
-#navegacao {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-left: rem;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-    width: 100%;
-    gap: 7rem;
-}
-
-.nav-link {
-    margin-bottom: 3rem;
-
-}
-
-.year {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-left: 24rem;
-}
-
-.meses-navigation li a {
-    font-size: 24px;
-}
-
-.agendaimg{
-  display: flex;
-  justify-content: left;
-  
-}
-
-.artistas {
-  padding-top: -9rem;
-}
-
-  .flex-row-b-18 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: -2rem;
-
-}
-
-.newsletter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -7rem;
-    margin-left: 16rem;
-
-}
-
-.rectangle-1a {
-    width: 350px;
-    margin-left: 0.7rem;
-}
-.artistas {
-  padding-top: 4rem;
-}
-
-  .agenda {
-      flex-direction: column;
-      align-items: center;
-      padding-top: 70rem
-  }
-
-  .card {
-    width: calc(33.33% - 20px);
-    /* Calcula a largura para 3 cards por linha com margem de 10px */
-    margin: 10px;
-    /* Espaçamento entre os cards */
-  }
-
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card-row {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-    background: #000; /* Cor de fundo para os cards que não são os últimos */
-  }
-
-  .card img {
-    width: 80%;
-    max-width: 300px;
-    margin-bottom: 10px;
-  }
-
-  .card a img {
-    width: 50px;
-    padding-left: 0;
-  }
-
-}
-
-@media only screen and (min-width: 360px) and (max-width: 768px) {
-
-.vetor-capa {
-  display: none;
-}
-
-.festival-nav-link img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-
-}
-
-.imagem-festival {
-  width: 159px;
-}
-
-.music-player {
-  margin-bottom: 37rem;
-  margin-left: 19rem;
-}
-
-.triangulo {
-  margin-left: -11em;
-  height: 212px;
-
-}
-
-.vector-programacao {
-  display: flex;
-  margin-left: 11.1rem;
-  margin-top: 4.7rem;
-}
-
-#navegacao {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-left: 4em;
-}
-
-nav {
-  margin-top: 5rem;
-  margin-left: -43rem;
-  width: 100%;
-  margin-top: -22rem;
-}
-
-.nav-link {
-  margin-bottom: 3rem;
-}
-
-.meses {
-  margin-left: -36rem;
-  margin-top: 49rem;
-}
-
-.meses-navigation {
-  list-style-type: none;
-  padding: 0;
-  margin-right: 44.6rem;
-}
-
-.meses-navigation li {
-  margin-bottom: 0.5rem;
-
-}
-
-.meses-navigation li a {
-  display: block;
-  font-size: 12px;
-  font-weight: 800;
-  text-decoration: none;
-  color: #000;
-}
-
-.yearImg {
-  margin-left: -25rem;
-  margin-bottom: -102rem;
-}
-
-.artistas {
-  width: 100%;
-  margin-top: 63rem;
-}
-
-  .agenda {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60rem
-  }
-
-  .right-column,
-  .left-column {
-    width: 100%;
-  }
-
-  .big-item,
-  .agenda-item,
-  .formAgenda {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-  }
-
-.agendaimg{
-  display: flex;
-  justify-content: left;
-  width: 220px;
-  
-}
-
-.formAgenda label{
-  margin-left: -3rem;
-}
-  
-  .formAgenda input, .formAgenda select {
-    width: 270px !important;
-    margin-left: -3rem;
-   
-  }
-
-  .radio-group{
-    display: flex;
-    margin-left: 8rem;
-  }
- 
-  #special-needs-obs{
-    display: flex;
-    margin-left: -3rem;
-    width: 270px !important;
-  }
-
-  .artImg, .artImg2{
-    width: 90%;
-  }
-
-  .card-, .card-container3, .card-container3, .card-container4{
-    padding-left: 1rem;
-    
-  }
-  .card {
-    width: 90%;
-    /* Um card por linha em telas menores */
-    margin: 20px 
-    auto;
-    /* Espaçamento entre os cards */
-    
-  }
-  .flex-row-b-18 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: -2rem;
-
-}
-
-.newsletter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -7rem;
-    margin-left: 16rem;
-
-}
-
-.rectangle-1a {
-    width: 350px;
-    margin-left: 0.7rem;
-}
-}
-
-
 
 
