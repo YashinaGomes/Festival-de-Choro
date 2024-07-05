@@ -502,7 +502,7 @@ nav {
     flex-direction: column;
     align-items: center;
     flex: 1;
-    width: 716px;
+    width: 766px;
     min-height: 643px;
     left: -1px;
     margin-top: -12rem;
@@ -693,6 +693,7 @@ nav {
     margin-left: 6.7rem;
     width: 527px;
     height: 26px;
+    
     background: url(public/images/vectorpatrocinadores.png) no-repeat left;
 }
 
@@ -1164,13 +1165,10 @@ nav {
     }
 
     .fotoCapucho {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin-top: -22rem;
-
-        border-radius: 6px;
-
+        width: 100%; /* Ajusta a largura para 90% da tela do celular */
+        min-height: auto; /* Permite que a altura se ajuste automaticamente */
+        padding: 0px; /* Adiciona padding para melhor visualização */
     }
 
     .patrocinios {
