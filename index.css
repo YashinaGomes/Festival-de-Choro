@@ -477,13 +477,14 @@ nav {
     font-size: 23px;
     font-style: normal;
     font-weight: 300;
-    
-    
+
+
 
 }
 
 .btn-topo {
-    display: none; /* Inicialmente escondido */
+    display: none;
+    /* Inicialmente escondido */
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -724,49 +725,24 @@ nav {
     line-height: normal;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-   
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
 
     .logo-capa {
         border-radius: 6px;
         background-color: #000;
+        width: 377px;
+        height: 143px;
         position: absolute;
-        bottom: 0;
-        z-index: 0;
         top: 3px;
-        left: 1px;
+        left: 0;
     }
-
     .vetor-capa {
         display: none;
     }
 
     .music-player {
-        display: flex;
-        align-items: center;
-        margin-left: 43rem;
-    }
-
-    .control-button {
-        padding: 6px;
-        font-size: 6px;
-        color: #fff;
-        background-color: #000000;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .control-button:hover {
-        background-color: #00000068;
-    }
-
-    .control-button svg {
-        fill: #fff;
+        margin-bottom: 46rem;
+        margin-left: 19rem;
     }
 
 
@@ -779,7 +755,7 @@ nav {
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-left: rem;
+        margin-left: 3rem;
     }
 
     nav {
@@ -817,21 +793,21 @@ nav {
     }
 
     .centro {
-        width: 80%;
+        width: 70%;
         height: 1650px;
-        margin-left: 7rem;
+        margin-left: 14rem;
 
     }
 
     .cent {
-        width: 559px;
-        height: 313px;
+        width: 359px;
+        height: 213px;
 
 
     }
 
     .cent-retangulo {
-        width: 560px;
+        width: 380px;
         height: 90px;
 
 
@@ -855,7 +831,7 @@ nav {
     }
 
     .fest {
-        width: 675px;
+        width: 466px;
 
     }
 
@@ -871,12 +847,12 @@ nav {
     }
 
     .collum3 {
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .collum p span {
         font-size: 47px;
-        
+
 
     }
 
@@ -891,7 +867,7 @@ nav {
 
     .vetorfest {
         padding: 6rem;
-        margin-left: -24rem;
+        margin-left: -10rem;
     }
 
     .vetorfest img {
@@ -923,7 +899,7 @@ nav {
         flex-direction: column;
         align-items: center;
         font-size: 30px;
-        margin-top: 1rem;
+        margin-top: -11rem;
         width: 110%;
     }
 
@@ -958,6 +934,10 @@ nav {
         margin-left: 0.7rem;
     }
 
+    .vector-1d {
+        display: none;
+      }
+
 
     /* .patrocinios {
         width: 739px;
@@ -969,8 +949,8 @@ nav {
 
 
 /* Media Query para celulares */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-   
+@media only screen and (min-width: 360px) and (max-width: 599px) {
+
     .logo-capa {
         border-radius: 6px;
         background-color: #000;
@@ -980,6 +960,7 @@ nav {
         top: 3px;
         left: 0;
     }
+
 
     .vetor-capa {
         display: none;
@@ -1014,15 +995,12 @@ nav {
     }
 
     #navegacao {
-        display: flex;
-        justify-content: center;
-        width: 100%;
         margin-left: 4em;
     }
 
     nav {
         margin-top: 5rem;
-        margin-left: -43rem;
+        margin-left: 1rem;
         width: 100%;
         margin-top: -22rem;
     }
@@ -1030,6 +1008,23 @@ nav {
     .nav-link {
         margin-bottom: 3rem;
     }
+
+    .festival-nav-link {
+        padding-left: 10rem;
+        margin-top: -2rem;
+
+    }
+
+    .festival-nav-link li {
+        margin-left: -6rem;
+    }
+
+    .triangulo {
+        padding-left: 14.6em;
+        margin-top: -0.4rem;
+    }
+
+
 
     .meses {
         margin-left: -36rem;
@@ -1056,7 +1051,7 @@ nav {
     }
 
     .yearImg {
-        margin-left: -25rem;
+        margin-left: -22rem;
         margin-bottom: -102rem;
     }
 
@@ -1065,7 +1060,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 30rem;
+        padding-top: 10rem;
         gap: 5rem;
 
     }
@@ -1140,12 +1135,29 @@ nav {
     }
 
     #capuchoText {
+        padding: 9rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 16px;
-        margin-top: 1rem;
+        font-size: 20px;
+        margin-top: -1rem;
+        width: 90%;
     }
+
+    .name {
+        margin-left:7rem;
+        margin-top: -8rem;
+    
+    }
+    
+    /* .name span {
+        color: #000;
+        font-family: "Gill Sans Nova";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 300;
+    
+    } */
 
     .setas {
         display: none;
@@ -1155,8 +1167,8 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 783px;
-        height: 671px;
+        margin-top: -22rem;
+
         border-radius: 6px;
 
     }
@@ -1169,37 +1181,37 @@ nav {
         margin-bottom: 1rem;
     }
 
-   
 
-    .flex-row-b-18{
+
+    .flex-row-b-18 {
         flex-direction: column;
     }
 
-    .newsletter-container{
+    .newsletter-container {
         flex-direction: column !important;
         justify-content: center;
         margin-left: 0;
 
-}
+    }
 
-.inscreva{
-    font-size: 18px;
-}
+    .inscreva {
+        font-size: 18px;
+    }
 
-.newsletter-form {
-    width: 100%;
-   
-}
+    .newsletter-form {
+        width: 100%;
 
-.newsletter-form input{
-    width: 200px;
-    
-}
+    }
 
-.enviar{
-width: 60px;
-font-size: 16px;
-  
-}
+    .newsletter-form input {
+        width: 200px;
+
+    }
+
+    .enviar {
+        width: 60px;
+        font-size: 16px;
+
+    }
 
 }
