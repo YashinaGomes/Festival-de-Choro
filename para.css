@@ -347,4 +347,269 @@ select {
   
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+  
+  .triangulo {
+    margin-right: -3rem;
+    margin-left: -0.1rem;
+}
+
+#navegacao {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 3rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+    gap: 7rem;
+}
+
+.nav-link {
+    margin-bottom: 3rem;
+
+}
+
+.year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 24rem;
+}
+
+.meses-navigation li a {
+    font-size: 24px;
+}
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 599px) {
+
+  .carousel img {
+   
+    
+    transform: translate(-50%, -50%);
+    display: none; /* Todas as imagens são ocultas inicialmente */
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .carousel img.active {
+    display: block; /* Apenas a imagem ativa é exibida */
+  }
+  
+
+  .vetor-capa {
+      display: none;
+  }
+
+  .festival-nav-link img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+
+  }
+
+  .imagem-festival {
+      width: 159px;
+    height: 22.41px;
+
+  }
+  .imagem-inicio{
+    width: 159px;
+    height: 22.41px;
+}
+
+  .music-player {
+      margin-bottom: 37rem;
+      margin-left: 19rem;
+  }
+
+  .triangulo {
+      margin-left: -11em;
+      height: 212px;
+
+  }
+
+  .vector-programacao {
+      display: flex;
+      margin-left: 11.1rem;
+      margin-top: 4.7rem;
+  }
+
+  #navegacao {
+      margin-left: 4em;
+  }
+
+  nav {
+      margin-top: 5rem;
+      margin-left: 1rem;
+      width: 100%;
+      margin-top: -22rem;
+  }
+
+  .nav-link {
+      margin-bottom: 3rem;
+  }
+
+  .festival-nav-link {
+      padding-left: 10rem;
+      margin-top: -2rem;
+  
+  }
+  
+  .festival-nav-link li {
+      margin-left: -6rem;
+  }
+  
+  .triangulo {
+      padding-left: 14.6em;
+      margin-top: -0.4rem;
+  }
+  
+  
+
+  .meses {
+      margin-left: -36rem;
+      margin-top: 49rem;
+  }
+
+  .meses-navigation {
+      list-style-type: none;
+      padding: 0;
+      margin-right: 44.6rem;
+  }
+
+  .meses-navigation li {
+      margin-bottom: 0.5rem;
+
+  }
+
+  .meses-navigation li a {
+      display: block;
+      font-size: 12px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #000;
+  }
+
+  .yearImg {
+      margin-left: -22rem;
+      margin-bottom: -102rem;
+  }
+
+  .agenda {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30rem;
+    width: 90%;
+}
+
+.right-column,
+.left-column {
+    width: 100%;
+}
+
+.big-item,
+.agenda-item,
+.formAgenda {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.agendaimg {
+    display: flex;
+    justify-content: left;
+    width: 320px;
+
+}
+
+.formAgenda label {
+    font-size: 17px;
+}
+
+.formAgenda input,
+.formAgenda select {
+    width: 270px !important;
+    
+
+}
+
+.formAgenda input[type="text"],
+.formAgenda input[type="email"],
+.formAgenda input[type="tel"],
+.formAgenda input[type="number"],
+.formAgenda select,
+.formAgenda textarea {
+  width: 80%;
+  height: 38px; /* Ajuste a altura conforme necessário */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0.5rem; /* Ajuste o padding conforme necessário */
+  font-size: 14px;
+}
+
+.radio-group {
+    display: flex;
+  
+}
+
+#special-needs-obs {
+    display: flex;
+    width: 270px !important;
+}
+
+.formBtn {
+  margin-left: 1.4rem;
+}
+.formAgenda button {
+  width: 128px;
+}
+.artistas {
+  margin-top: 4rem;
+
+}
+
+.artImg, .artImg2{
+  width: 90%;
+  margin-top: 30rem;
+} 
+
+.card-, .card-container3, .card-container3, .card-container4{
+  padding-left: 1rem;
+  
+} */
+
+.flex-row-b-18 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -2rem;
+
+}
+
+.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rectangle-1a {
+    width: 350px;
+    margin-left: 0.7rem;
+}
+.vector-1d {
+  display: none;
+}
+}
+
 

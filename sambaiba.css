@@ -1,3 +1,4 @@
+/* Estilos gerais */
 .container {
   display: flex;
   margin: 5rem auto;
@@ -12,15 +13,14 @@
   align-items: center;
 }
 
-.container1 img:first-child {
-  width: 500px; /* Ajuste a largura para 100% para manter a responsividade */
+.container1 img:first-child, .container1 img:last-child {
+  width: 70%; /* Ajuste a largura para 100% para manter a responsividade */
   height: auto; /* Mantém a proporção da imagem */
+  margin-top: 1rem; /* Adiciona margem superior para separar as imagens */
 }
 
-.container1 img:last-child {
-  width: 500px; /* Ajuste a largura para 100% para manter a responsividade */
-  height: auto; /* Mantém a proporção da imagem */
-  margin-top: 5rem; /* Adiciona margem superior para separar as imagens */
+.container1 img:first-child {
+  margin-top: 0; /* Remove a margem superior da primeira imagem */
 }
 
 .container2 {
@@ -32,13 +32,14 @@
 }
 
 .container2 img {
-  width: 500px;
+  width: 330px;
   height: auto;
-  margin: 1rem auto; /* Adiciona margem superior para separar as imagens */
+  margin: 4rem auto; /* Adiciona margem superior para separar as imagens */
 }
 
-.container2 iframe{
-  margin-top: 10rem;
+.container2 iframe {
+  width: 80%; /* Ajusta a largura para responsividade */
+  margin-top: 4rem;
 }
 
 .iframe-border {
@@ -47,19 +48,162 @@
   padding: 5px; /* Adiciona preenchimento ao redor do iframe (opcional) */
   margin-top: 5rem;
 }
-.container2 h4{
+
+.container2 h4 {
   color: #FFF;
-font-family: "Gill Sans Nova";
-font-size: 30px;
-font-style: normal;
-font-weight: 600;
-line-height: 96%; /* 28.8px */
-letter-spacing: -0.33px;
-padding-top: 1em;
+  font-family: "Gill Sans Nova";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96%; /* 28.8px */
+  letter-spacing: -0.33px;
+  padding-top: 1em;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Alterar a direção do flex para coluna na versão móvel */
+    margin-top: 0; /* Ajustar a margem superior conforme necessário */
+    padding: 0;
+    padding-top: 5rem;
+  }
+
+  .vetor-capa {
+    display: none;
+  }
+
+  .music-player {
+    margin-bottom: 46rem;
+    margin-left: 19rem;
+}
+
+  .triangulo {
+    margin-right: -3rem;
+    margin-left: -0.1rem;
+  }
+
+  #navegacao {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 3rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+    gap: 7rem;
+  }
+
+  .nav-link {
+    margin-bottom: 3rem;
+  }
+
+  .year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 24rem;
+  }
+
+  .meses-navigation li a {
+    font-size: 24px;
+  }
+  .vector-1d {
+    display: none;
+  }
 }
 
 /* Celular */
-@media screen and (min-width:325px) and (max-width:726px) {
+@media only screen and (min-width: 360px) and (max-width: 599px) {
+  .festival-nav-link img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .imagem-festival {
+    width: 159px;
+  }
+
+  .music-player {
+    margin-bottom: 37rem;
+    margin-left: 19rem;
+  }
+
+  .triangulo {
+    margin-left: -11em;
+    height: 212px;
+  }
+
+  .vector-programacao {
+    display: flex;
+    margin-left: 11.1rem;
+    margin-top: 4.7rem;
+  }
+
+  #navegacao {
+    margin-left: 4em;
+  }
+
+  nav {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    width: 100%;
+    margin-top: -22rem;
+  }
+
+  .nav-link {
+    margin-bottom: 3rem;
+  }
+
+  .festival-nav-link {
+    padding-left: 10rem;
+    margin-top: -2rem;
+  }
+
+  .festival-nav-link li {
+    margin-left: -6rem;
+  }
+
+  .triangulo {
+    padding-left: 14.6em;
+    margin-top: -0.4rem;
+  }
+
+  .meses {
+    margin-left: -36rem;
+    margin-top: 49rem;
+  }
+
+  .meses-navigation {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 44.6rem;
+  }
+
+  .meses-navigation li {
+    margin-bottom: 0.5rem;
+  }
+
+  .meses-navigation li a {
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .yearImg {
+    margin-left: -22rem;
+    margin-bottom: -102rem;
+  }
+
   .container {
     flex-direction: column; /* Alterar a direção do flex para coluna na versão móvel */
     margin-top: 0; /* Ajustar a margem superior conforme necessário */
@@ -86,22 +230,12 @@ padding-top: 1em;
     margin-top: 0; /* Remove a margem superior da primeira imagem */
   }
 
-  .container2 iframe{
+  .container2 iframe {
     width: 80%;
     padding-top: 3em;
   }
 
-  .container2 h4{
+  .container2 h4 {
     font-size: 20px;
   }
 }
- /*Tablet*/
- @media only screen and (min-width: 767px) and (max-width: 1024px) {
-  .container {
-    flex-direction: column; /* Alterar a direção do flex para coluna na versão móvel */
-    margin-top: 0; /* Ajustar a margem superior conforme necessário */
-    padding: 0;
-    padding-top: 5rem;
-  }
-  
- }
