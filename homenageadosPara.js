@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
       imgSrc1: './assets/cards/nazare.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
-      link2: './assets/pdf/NAZARÉ PEREIRA.pdf',
+      link2: './assets/pdf/nazare.pdf',
     },
     {
       imgSrc1: './assets/cards/dona onete.png',

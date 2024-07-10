@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       imgSrc1: './assets/cards/orquestra.png',
       imgSrc2: './assets/cards/release.png',
       link1: '#',
-      link2: './assets/pdf/ORQUESTRA AEROFÔNICA.pdf',
+      link2: './assets/pdf/orquestraaerofonica.pdf',
     },
     {
       imgSrc1: './assets/cards/hermeto.png',
